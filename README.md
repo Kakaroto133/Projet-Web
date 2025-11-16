@@ -18,12 +18,12 @@ Logo retours faciles : https://fr.freepik.com/vecteurs-premium/icone-fleche-reto
 Logo SNK STORE : généré avec ChatGPT<br>
 Logo Instagram : https://www.pngkit.com/view/u2q8w7o0w7u2o0w7_ig-png-logo-svg-transparent-instagram-logo-png/<br>
 Logo LinkedIn : https://www.template.net/editable/85938/grey-linkedin-vector<br>
-Logo X : https://logowik.com/grey-x-icon-66205.html
-Mug 1 : https://www.amazon.fr/Attack-LAttaque-Unisexe-multicolore-Céramique/dp/B0F3382962/ref=asc_df_B0F3382962?mcid=ddc697099f373ce6a77555ca59619bda&tag=googshopfr-21&linkCode=df0&hvadid=753131572698&hvpos=&hvnetw=g&hvrand=12410244505229435870&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9055011&hvtargid=pla-2420993555908&psc=1&hvocijid=12410244505229435870-B0F3382962-&hvexpln=0
-Mug 2 : https://www.abystyle.com/fr/l-attaque-des-titans/8119-l-attaque-des-titans-mug-bataillon-d-exploration-3665361165798.html
-Veste : https://manga-imperial.fr/collections/vestes-attaque-des-titans/attack-on-titan?srsltid=AfmBOoq11H-7tephzdtXJXAZDWN49h59UJWyI_TtpA_WC52H_JCGBSRr
-Doudoune : https://figurinemangafrance.fr/products/veste-bataillon-dexploration-lattaque-des-titans™
-Porte clé ( clé ) : https://www.amazon.in/RV-Mart-Attack-Keychain-Bronze/dp/B0CPT39M74
-Lots de porte clé : https://www.hakijap.com/accessoires-4/autres/porte-cle-attaque-des-titans.html
-Figurine pop : https://www.elbenwald.fr/l-attaque-des-titans/l-attaque-des-titans-levi-sp-1-figurine-funko-pop
-FIgurine : https://www.amazon.fr/Figurine-dAttaque-Titan-Statuette-officiellement/dp/B093PM8ZYL
+Logo X : https://logowik.com/grey-x-icon-66205.html<br>
+Mug 1 : https://www.amazon.fr/Attack-LAttaque-Unisexe-multicolore-Céramique/dp/B0F3382962/ref=asc_df_B0F3382962?mcid=ddc697099f373ce6a77555ca59619bda&tag=googshopfr-21&linkCode=df0&hvadid=753131572698&hvpos=&hvnetw=g&hvrand=12410244505229435870&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9055011&hvtargid=pla-2420993555908&psc=1&hvocijid=12410244505229435870-B0F3382962-&hvexpln=0<br>
+Mug 2 : https://www.abystyle.com/fr/l-attaque-des-titans/8119-l-attaque-des-titans-mug-bataillon-d-exploration-3665361165798.html<br>
+Veste : https://manga-imperial.fr/collections/vestes-attaque-des-titans/attack-on-titan?srsltid=AfmBOoq11H-7tephzdtXJXAZDWN49h59UJWyI_TtpA_WC52H_JCGBSRr<br>
+Doudoune : https://figurinemangafrance.fr/products/veste-bataillon-dexploration-lattaque-des-titans™<br>
+Porte clé ( clé ) : https://www.amazon.in/RV-Mart-Attack-Keychain-Bronze/dp/B0CPT39M74<br>
+Lots de porte clé : https://www.hakijap.com/accessoires-4/autres/porte-cle-attaque-des-titans.html<br>
+Figurine pop : https://www.elbenwald.fr/l-attaque-des-titans/l-attaque-des-titans-levi-sp-1-figurine-funko-pop<br>
+FIgurine : https://www.amazon.fr/Figurine-dAttaque-Titan-Statuette-officiellement/dp/B093PM8ZYL<br>
