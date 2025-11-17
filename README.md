@@ -31,3 +31,5 @@ Figurine : https://www.amazon.fr/Figurine-dAttaque-Titan-Statuette-officiellemen
 Logo Dark Theme : https://www.svgrepo.com/svg/309493/dark-theme<br>
 Logo panier : https://www.flaticon.com/fr/icone-gratuite/panier_126083<br>
 Logo Telephone : https://www.stickpng.com/fr/img/appareils-electroniques/icones-telephones/icone-vieux-telephone<br>
+Logo Adresse : https://fr.pinterest.com/pin/379639443593529927<br>
+Logo Email : https://fr.freepik.com/vecteurs-premium/symbole-email-est-icone-blanche_192796197.htm#fromView=image_search&page=1&position=27&uuid=b352d1e8-3cef-461b-ade4-6e8cbb979055<br>
