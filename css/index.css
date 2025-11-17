@@ -13,8 +13,9 @@ html {
 header {
     width: 100%;
     padding: 10px 20px;
-    background-color: #f8f8f8;
+    background-color: #ffffff;
     font-family: 'Luckiest Guy', cursive;
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -37,6 +38,13 @@ header {
     font-size: 2.5rem;
 }
 
+.hamburger-menu {
+    display: none; 
+    cursor: pointer;
+    height: 40px; 
+    width: auto;
+}
+
 .navigation-principale a {
     margin-left: 20px;
     text-decoration: none;
@@ -46,12 +54,13 @@ header {
     transition: all 0.2s ease;
     font-family: 'Madimi One', cursive;
     display: inline-block;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); 
 }
 
 .navigation-principale a:hover {
     color: #003B93;
     transform: scale(1.1); 
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 .introduction {
@@ -65,7 +74,7 @@ header {
     color: #003B93;
     font-family: 'Luckiest Guy', cursive;
     font-size: 65px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); 
 }
 
 .sous-titre {
@@ -74,6 +83,7 @@ header {
     font-size: 20px;
     margin-bottom: 20px;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    padding-top: 20px;
 }
 
 .bouton {
@@ -105,6 +115,17 @@ header {
     height: auto;
     border-radius: 20px; 
     margin-top: 80px;
+}
+
+.video-accueil {
+    display: block;
+    margin: 0 auto;
+    max-width: 300px;
+    width: 90%;
+    border-radius: 20px;
+    transition: background-color 0.2s, box-shadow 0.2s;
+    box-shadow: 10px 10px 3px rgba(0, 0, 0, 0.15);
+    margin-bottom: 80px;
 }
 
 .partenaires {
@@ -149,9 +170,11 @@ header {
     border-radius: 10px;
 }
 
-.pub-point h2 {
+h2 {
     font-family: 'Luckiest Guy', cursive;
     color: #003B93;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    font-size: 33px;
 }
 
 .bouton-secondaire {
@@ -174,6 +197,12 @@ header {
     background-color: #003B93;
     color: white;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+.conteneur-pub-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .conteneur-pub-images img {
@@ -212,37 +241,47 @@ footer {
     color: white;
 }
 
+.logo-texte-footer {
+    display: flex;
+    align-items: center;
+}
+
 .logo-footer {
     width: 30px;
     height: auto;
+    margin-right: 10px;
 }
 
 .titre-site-footer {
     font-size: 1.2rem;
     font-family: 'Luckiest Guy', cursive;
     color: white;
-    margin-left: 10px;
 }
 
 .navigation-footer a {
     color: white;
     text-decoration: none;
     margin-left: 20px;
-    transition: color 0.2s;
+    transition: all 0.2s ease;
+    display: inline-block;
+    font-family: sans-serif;
 }
 
 .navigation-footer a:hover {
     color: #003B93;
+    transform: scale(1.1);
 }
 
-video {
-    display: block;
-    margin: 0 auto;
-    border-radius: 20px;
-    transition: background-color 0.2s, box-shadow 0.2s;
-    box-shadow: 10px 10px 3px rgba(0, 0, 0, 0.15);
+.social-icons img {
+    height: 25px; 
+    width: auto;
+    margin-left: 15px;
+    transition: transform 0.2s ease;
 }
 
+.social-icons img:hover {
+    transform: scale(1.2); 
+}
 
 
 @media (max-width: 1024px) {
@@ -265,6 +304,42 @@ video {
 
 @media (max-width: 768px) {
     
+    .navigation-principale {
+        display: none; 
+        flex-direction: column;
+        background-color: #f8f8f8;
+        position: absolute;
+        top: 80px; 
+        left: 0;
+        width: 100%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        z-index: 10;
+        padding-bottom: 10px;
+    }
+    
+    .navigation-principale a {
+        display: block;
+        padding: 15px 20px;
+        text-align: center;
+        margin: 0;
+        border-bottom: 1px solid #eee;
+        transform: none;
+        text-shadow: none;
+    }
+
+    .navigation-principale.active {
+        display: flex; 
+    }
+
+    .hamburger-menu {
+        display: block; 
+    }
+    
+    header {
+        justify-content: space-between; 
+        padding: 10px 15px; 
+    }
+    
     .titre-site {
         font-size: 1.8rem;
     }
@@ -273,11 +348,6 @@ video {
         height: 50px;
     }
     
-    .navigation-principale a {
-        margin-left: 10px;
-        font-size: 1rem;
-    }
-
     .titre-principal {
         font-size: 45px;
     }
@@ -305,8 +375,11 @@ video {
         padding: 20px 10px;
     }
     
+    .logo-texte-footer, .navigation-footer, .social-icons {
+        margin-bottom: 15px;
+    }
+    
     .navigation-footer {
-        margin-top: 15px;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -315,29 +388,23 @@ video {
     .navigation-footer a {
         margin: 5px 10px;
     }
+    
+    .social-icons img {
+        margin: 0 10px;
+    }
 }
 
 @media (max-width: 480px) {
-    
-    header {
-        padding: 10px 15px;
-        flex-direction: column; 
-    }
-    
-    .logo-texte {
-        margin-bottom: 10px;
-    }
     
     .titre-site {
         font-size: 1.4rem;
     }
     
-    .navigation-principale {
-        width: 100%;
-        display: flex;
-        justify-content: center;
+    header {
+        flex-direction: row; 
+        justify-content: space-between;
     }
-
+    
     .introduction {
         padding: 20px 10px;
     }
@@ -356,7 +423,6 @@ video {
     }
     
     .conteneur-pub-images {
-        display: flex;
         flex-direction: column;
         align-items: center;
     }
