@@ -27,4 +27,6 @@ Doudoune : https://figurinemangafrance.fr/products/veste-bataillon-dexploration-
 Porte clé ( clé ) : https://www.amazon.in/RV-Mart-Attack-Keychain-Bronze/dp/B0CPT39M74<br>
 Lots de porte clé : https://www.hakijap.com/accessoires-4/autres/porte-cle-attaque-des-titans.html<br>
 Figurine pop : https://www.elbenwald.fr/l-attaque-des-titans/l-attaque-des-titans-levi-sp-1-figurine-funko-pop<br>
-FIgurine : https://www.amazon.fr/Figurine-dAttaque-Titan-Statuette-officiellement/dp/B093PM8ZYL<br>
+Figurine : https://www.amazon.fr/Figurine-dAttaque-Titan-Statuette-officiellement/dp/B093PM8ZYL<br>
+Logo Dark Theme : https://www.svgrepo.com/svg/309493/dark-theme<br>
+Logo panier : https://www.flaticon.com/fr/icone-gratuite/panier_126083<br>
