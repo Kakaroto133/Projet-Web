@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Madimi+One&display=swap');
+
+html {
+    font-size: 16px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #f8f8f8;
+    font-family: 'Luckiest Guy', cursive;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-texte {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #003B93;
+}
+
+.logo {
+    height: 60px;
+    width: auto;
+    margin-right: 10px;
+}
+
+.titre-site {
+    font-size: 2.5rem;
+}
+
+.navigation-principale a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333;
+    font-size: 1.1rem;
+    padding: 5px 10px;
+    transition: all 0.2s ease;
+    font-family: 'Madimi One', cursive;
+    display: inline-block;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.navigation-principale a:hover {
+    color: #003B93;
+    transform: scale(1.1); 
+}
+
+.introduction {
+    max-width: 1200px; 
+    margin: 0 auto;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.titre-principal {
+    color: #003B93;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 65px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.sous-titre {
+    color: #6C6C6C; 
+    font-family: 'Madimi One', cursive; 
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.bouton {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #003B93;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Madimi One', cursive;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.bouton:hover {
+    transform: scale(0.98);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.intro-image {
+    display: block;
+    margin: 20px auto;
+    width: 800px; 
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px; 
+    margin-top: 80px;
+}
+
+.partenaires {
+    text-align: center;
+    padding: 30px 10px;
+}
+
+.conteneur-logos {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.conteneur-logos img {
+    width: 100px;
+    height: auto;
+    min-width: 60px;
+}
+
+.pub {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.conteneur-pub-points {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 40px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pub-point {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.pub-point h2 {
+    font-family: 'Luckiest Guy', cursive;
+    color: #003B93;
+}
+
+.bouton-secondaire {
+    margin-top: 15px;
+    padding: 8px 16px;
+    font-size: 0.9rem;
+    background-color: #f8f8f8;
+    color: #003B93;
+    border: 1px solid #003B93;
+    border-radius: 8px;
+    font-family: 'Madimi One', cursive;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.2s, box-shadow 0.2s;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+}
+
+.bouton-secondaire:hover {
+    background-color: #003B93;
+    color: white;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+.conteneur-pub-images img {
+    height: 100px;
+    margin: 0 20px;
+}
+
+.histoire {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: left;
+}
+
+.histoire h3 {
+    margin-top: 25px;
+    margin-bottom: 10px;
+    font-family: 'Luckiest Guy', cursive;
+    color: #333;
+    font-size: 1.5rem;
+}
+
+.histoire p {
+    font-family: sans-serif;
+    line-height: 1.6;
+    color: #555;
+}
+
+footer {
+    background-color: #000000;
+    padding: 20px 50px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+.logo-footer {
+    width: 30px;
+    height: auto;
+}
+
+.titre-site-footer {
+    font-size: 1.2rem;
+    font-family: 'Luckiest Guy', cursive;
+    color: white;
+    margin-left: 10px;
+}
+
+.navigation-footer a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: color 0.2s;
+}
+
+.navigation-footer a:hover {
+    color: #003B93;
+}
+
+@media (max-width: 1024px) {
+    .conteneur-pub-points {
+        flex-direction: column;
+        gap: 20px;
+        padding: 0 20px;
+    }
+    
+    .pub-point {
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    
+    .conteneur-pub-images img {
+        height: 80px;
+    }
+}
+
+@media (max-width: 768px) {
+    
+    .titre-site {
+        font-size: 1.8rem;
+    }
+
+    .logo {
+        height: 50px;
+    }
+    
+    .navigation-principale a {
+        margin-left: 10px;
+        font-size: 1rem;
+    }
+
+    .titre-principal {
+        font-size: 45px;
+    }
+    
+    .sous-titre {
+        font-size: 1.1rem;
+    }
+    
+    .intro-image {
+        margin-top: 40px;
+    }
+    
+    .conteneur-logos {
+        gap: 20px;
+    }
+
+    .conteneur-logos img {
+        width: 18vw;
+        max-width: 70px;
+    }
+    
+    footer {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 10px;
+    }
+    
+    .navigation-footer {
+        margin-top: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .navigation-footer a {
+        margin: 5px 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    
+    header {
+        padding: 10px 15px;
+        flex-direction: column; 
+    }
+    
+    .logo-texte {
+        margin-bottom: 10px;
+    }
+    
+    .titre-site {
+        font-size: 1.4rem;
+    }
+    
+    .navigation-principale {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .introduction {
+        padding: 20px 10px;
+    }
+
+    .titre-principal {
+        font-size: 30px;
+    }
+
+    .sous-titre {
+        font-size: 1rem;
+    }
+    
+    .conteneur-logos img {
+        width: 20vw;
+        max-width: 60px;
+    }
+    
+    .conteneur-pub-images {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .conteneur-pub-images img {
+        margin: 10px 0;
+        height: 60px;
+    }
+    
+    .histoire {
+        padding: 20px 10px;
+    }
+    
+    .intro-image {
+        max-width: 95%; 
+        margin-top: 40px;
+    }
+}
