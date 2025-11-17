@@ -30,3 +30,4 @@ Figurine pop : https://www.elbenwald.fr/l-attaque-des-titans/l-attaque-des-titan
 Figurine : https://www.amazon.fr/Figurine-dAttaque-Titan-Statuette-officiellement/dp/B093PM8ZYL<br>
 Logo Dark Theme : https://www.svgrepo.com/svg/309493/dark-theme<br>
 Logo panier : https://www.flaticon.com/fr/icone-gratuite/panier_126083<br>
+Logo Telephone : https://www.stickpng.com/fr/img/appareils-electroniques/icones-telephones/icone-vieux-telephone<br>
