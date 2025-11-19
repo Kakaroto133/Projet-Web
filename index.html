@@ -1,10 +1,11 @@
+<!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SNK STORE | Accueil</title>
     <link rel="stylesheet" href="css/index.css">
-    <link rel="icon" type="image/svg+xml" href="icone.ico"/>
+    <link rel="icon" type="image/svg+xml" href="img/icone.ico"/>
 </head>
 <body>
 
@@ -28,10 +29,10 @@
     <h1 class="titre-principal">Bienvenue sur notre site ! ⚔️</h1>
     <p class="sous-titre">La boutique de produits dérivés n°1 du célèbre manga “L'Attaque des Titans”</p>
     <a class="bouton" href="html/boutique.html">Parcourir la boutique</a>
-    <img src="img/logo_snk.webp" alt="logo de SNK" class="intro-image">
+    <img src="img/logo_snk.webp" alt="logo de SNK" class="intro-image" loading="lazy">
 </section>
 
-<video controls autoplay loop muted class="video-accueil">
+<video autoplay loop muted class="video-accueil" playsinline>
     <source src="img/video_accueil.webm" type="video/webm">    
     <track 
         src="sous_titres.vtt" 
@@ -52,55 +53,81 @@
 
 <section class="partenaires">
     <h2>Nos Partenaires</h2>
-    <div class="conteneur-logos">
-        <img src="img/pop.webp" alt="logo de Funko Pop">
-        <img src="img/ikea.webp" alt="logo de Ikea">
-        <img src="img/laboiteaobjet.webp" alt="logo de Boite a objet">
-        <img src="img/konbini.webp" alt="logo de Konbini">
-        <img src="img/kiabi.webp" alt="logo de Kiabi">
+    <div class="banderole">
+        <div class="conteneur-logos">
+            <img src="img/pop.webp" alt="logo de Funko Pop" loading="lazy">
+            <img src="img/ikea.webp" alt="logo de Ikea" loading="lazy">
+            <img src="img/laboiteaobjet.webp" alt="logo de Boite a objet" loading="lazy">
+            <img src="img/konbini.webp" alt="logo de Konbini" loading="lazy">
+            <img src="img/kiabi.webp" alt="logo de Kiabi" loading="lazy">
+            
+            <img src="img/pop.webp" alt="logo de Funko Pop" loading="lazy">
+            <img src="img/ikea.webp" alt="logo de Ikea" loading="lazy">
+            <img src="img/laboiteaobjet.webp" alt="logo de Boite a objet" loading="lazy">
+            <img src="img/konbini.webp" alt="logo de Konbini" loading="lazy">
+            <img src="img/kiabi.webp" alt="logo de Kiabi" loading="lazy">
+        </div>
     </div>
 </section>
 
 
 <section class="pub">
-    <div class="conteneur-pub-points">
-        <div class="pub-point">
-            <h2>Qualité Premium</h2>
-            <p>Produits officiels, fabriqués en France. Qualité et authenticité garanties. Le savoir-faire français à votre service.</p>
-            <a href="#" class="bouton-secondaire">En savoir plus</a> 
+    <div class="conteneur-pub-lignes">
+        
+        <div class="pub-ligne">
+            <div class="pub-point">
+                <h2>Qualité Premium</h2>
+                <p>Produits officiels, fabriqués en France. Qualité et authenticité garanties. Le savoir-faire français à votre service.</p>
+                <a href="#" class="bouton-secondaire">En savoir plus</a> 
+            </div>
+            <img src="img/qualite.webp" alt="Image de medaille" loading="lazy">
         </div>
-        <div class="pub-point">
-            <h2>Livraison Rapide</h2>
-            <p>Livraison gratuite dès 50€ d'achat, pour une livraison rapide et fiable.</p>
-            <a href="#" class="bouton-secondaire">En savoir plus</a> 
+
+        <div class="pub-ligne">
+            <img src="img/livraison-rapide.webp" alt="Icône de camion pour livraison rapide" loading="lazy">
+            <div class="pub-point">
+                <h2>Livraison Rapide</h2>
+                <p>Livraison gratuite dès 50€ d'achat, pour une livraison rapide et fiable.</p>
+                <a href="#" class="bouton-secondaire">En savoir plus</a> 
+            </div>
         </div>
-        <div class="pub-point">
-            <h2>Retours Faciles</h2>
-            <p>30 jours pour changer d'avis, le retour est sans frais et la commande est remboursée</p>
-            <a href="#" class="bouton-secondaire">En savoir plus</a>
+
+        <div class="pub-ligne">
+            <div class="pub-point">
+                <h2>Retours Faciles</h2>
+                <p>30 jours pour changer d'avis, le retour est sans frais et la commande est remboursée</p>
+                <a href="#" class="bouton-secondaire">En savoir plus</a>
+            </div>
+            <img src="img/fleche.webp" alt="flèche pour les retours faciles" loading="lazy">
         </div>
-    </div>
-    <div class="conteneur-pub-images">
-        <img src="img/qualite.webp" alt="Image de medaille">
-        <img src="img/fleche.webp" alt="flèche pour faire défiler les promotions">
-        <img src="img/livraison-rapide.webp" alt="Icône de camion pour livraison rapide">
+        
     </div>
 </section>
 
 <section class="histoire">
-    <h3>Notre Histoire</h3>
-    <p>Chez SNK STORE, nous partageons la passion de l’univers SNK en proposant des produits dérivés officiels. Notre objectif : offrir à chaque fan des objets uniques pour vivre l’esprit de SNK au quotidien. Rejoignez-nous et faites vivre votre passion !</p>
-    <h3>Notre Parcours</h3>
-    <p>Depuis janvier 2020, SNK STORE a été créé, lançant son site en mars, proposant ses premières collections en juin comme les vêtements, participant à des conventions en septembre, élargissant son offre en janvier 2021 avec des mugs, atteignant 10 000 abonnés sur Instagram en mai, ouvrant un espace physique en décembre 2021 à Aix-en-Provence, lançant une gamme exclusive de figurines en mars 2022, et poursuivant sa croissance aujourd’hui.</p>
-    <h3>Notre Avenir</h3>
-    <p>Notre avenir consiste à développer notre gamme de produits, à étendre notre présence sur de nouvelles plateformes, et à renforcer notre communauté. Nous souhaitons organiser davantage d'événements, collaborer avec d'autres marques et artistes, et continuer à améliorer l'expérience client. Notre objectif est de faire de SNK STORE une référence incontournable dans l'univers SNK, en partageant notre passion et en innovant constamment pour satisfaire nos fans.</p>
+    <div class="histoire-gauche">
+        <h3>Notre Histoire</h3>
+        <p>Chez SNK STORE, nous partageons la passion de l’univers SNK en proposant des produits dérivés officiels. Notre objectif : offrir à chaque fan des objets uniques pour vivre l’esprit de SNK au quotidien. Rejoignez-nous et faites vivre votre passion !</p>
+    </div>
+    
+    <div class="histoire-centre">
+        <h3>Notre Parcours</h3>
+        <p>Depuis janvier 2020, SNK STORE a été créé, lançant son site en mars, proposant ses premières collections en juin comme les vêtements, participant à des conventions en septembre, élargissant son offre en janvier 2021 avec des mugs, atteignant 10 000 abonnés sur Instagram en mai, ouvrant un espace physique en décembre 2021 à Aix-en-Provence, lançant une gamme exclusive de figurines en mars 2022, et poursuivant sa croissance aujourd’hui.</p>
+    </div>
+    
+    <div class="histoire-droite">
+        <h3>Notre Avenir</h3>
+        <p>Notre avenir consiste à développer notre gamme de produits, à étendre notre présence sur de nouvelles plateformes, et à renforcer notre communauté. Nous souhaitons organiser davantage d'événements, collaborer avec d'autres marques et artistes, et continuer à améliorer l'expérience client. Notre objectif est de faire de SNK STORE une référence incontournable dans l'univers SNK, en partageant notre passion et en innovant constamment pour satisfaire nos fans.</p>
+    </div>
 </section>
 
 
 <footer>
     <div class="logo-texte-footer">
-        <img src="img/logo.webp" alt="Logo de SNK STORE" class="logo-footer">
-        <span class="titre-site-footer">SNK STORE</span>
+        <a href="index.html">
+            <img src="img/logo.webp" alt="Logo de SNK STORE" class="logo-footer">
+            <span class="titre-site-footer">SNK STORE</span>
+        </a>
     </div>
     
     <nav class="navigation-footer">
@@ -116,6 +143,6 @@
     </div>
 </footer>
 
-<script src="main.js"></script>
+<script src="main.js" defer></script>
 </body>
 </html>

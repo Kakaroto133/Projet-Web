@@ -10,12 +10,27 @@ html {
     padding: 0;
 }
 
+.titre-site,
+.navigation-principale a,
+.navigation-principale a:hover,
+.titre-principal,
+.sous-titre,
+.bouton,
+.pub-point p,
+h2,
+.bouton-secondaire,
+.histoire h3,
+.histoire p,
+.titre-site-footer,
+.navigation-footer a {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
 header {
     width: 100%;
     padding: 10px 20px;
     background-color: #ffffff;
     font-family: 'Luckiest Guy', cursive;
-    
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -54,13 +69,11 @@ header {
     transition: all 0.2s ease;
     font-family: 'Madimi One', cursive;
     display: inline-block;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); 
 }
 
 .navigation-principale a:hover {
     color: #003B93;
     transform: scale(1.1); 
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 .introduction {
@@ -74,7 +87,6 @@ header {
     color: #003B93;
     font-family: 'Luckiest Guy', cursive;
     font-size: 65px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); 
 }
 
 .sous-titre {
@@ -82,7 +94,6 @@ header {
     font-family: 'Madimi One', cursive; 
     font-size: 20px;
     margin-bottom: 20px;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
     padding-top: 20px;
 }
 
@@ -128,24 +139,46 @@ header {
     margin-bottom: 80px;
 }
 
+@keyframes defilement {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%); 
+    }
+}
+
 .partenaires {
     text-align: center;
-    padding: 30px 10px;
+    padding: 30px 0;
+    overflow: hidden; 
+}
+
+.banderole {
+    width: 600px; 
+    margin: 20px auto 0 auto; 
+    overflow: hidden;
+    padding: 10px 0; 
+    border: 1px solid #ddd; 
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
 .conteneur-logos {
     display: flex; 
-    justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    gap: 30px;
-    margin-top: 20px;
+    gap: 30px; 
+    animation: defilement 20s linear infinite; 
+    width: fit-content;
+    min-width: 200%;
 }
 
 .conteneur-logos img {
-    width: 100px;
+    width: 120px;
     height: auto;
     min-width: 60px;
+    margin: 0; 
+    flex-shrink: 0; 
 }
 
 .pub {
@@ -153,28 +186,44 @@ header {
     text-align: center;
 }
 
-.conteneur-pub-points {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    margin-bottom: 40px;
+.conteneur-pub-lignes {
     max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 0 20px;
+}
+
+.pub-ligne {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px 40px; 
+    text-align: left;
 }
 
 .pub-point {
-    flex: 1;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
+    max-width: 50%;
+    padding: 0 20px;
+}
+
+.pub-point p {
+    font-family: 'Madimi One', cursive;
+}
+
+.pub-ligne img {
+    height: 200px; 
+    width: auto;
+    flex-shrink: 0;
 }
 
 h2 {
     font-family: 'Luckiest Guy', cursive;
     color: #003B93;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
-    font-size: 33px;
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 10px;
 }
 
 .bouton-secondaire {
@@ -199,51 +248,58 @@ h2 {
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
 }
 
-.conteneur-pub-images {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.conteneur-pub-images img {
-    height: 100px;
-    margin: 0 20px;
-}
-
 .histoire {
-    max-width: 900px;
-    margin: 40px auto;
+    max-width: 1200px;
+    margin: 40px auto 80px auto;
     padding: 20px;
-    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    text-align: initial;
+}
+
+.histoire-gauche, .histoire-centre, .histoire-droite {
+    flex: 1;
+    text-align: left; 
+    border-top: 1px solid #ccc;
+    padding-top: 20px; 
+    margin-top: 20px; 
 }
 
 .histoire h3 {
     margin-top: 25px;
     margin-bottom: 10px;
     font-family: 'Luckiest Guy', cursive;
-    color: #333;
+    color: #003B93; 
     font-size: 1.5rem;
 }
 
 .histoire p {
-    font-family: sans-serif;
+    font-family: 'Madimi One', cursive;
     line-height: 1.6;
     color: #555;
 }
 
 footer {
-    background-color: #000000;
+    background-color: #ffffff;
     padding: 20px 50px;
-    text-align: left;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    color: white;
+    color: #333;
+    text-align: initial;
+    border-top: 1px solid #ccc;
 }
 
 .logo-texte-footer {
     display: flex;
     align-items: center;
+}
+
+.logo-texte-footer > a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
 }
 
 .logo-footer {
@@ -253,23 +309,41 @@ footer {
 }
 
 .titre-site-footer {
-    font-size: 1.2rem;
+    font-size: 1.8rem;
     font-family: 'Luckiest Guy', cursive;
-    color: white;
+    color: #003B93;
+}
+
+.navigation-footer {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    padding-left: 30px;
 }
 
 .navigation-footer a {
-    color: white;
+    color: #555;
     text-decoration: none;
-    margin-left: 20px;
+    margin: 0 15px;
+    padding: 0;
     transition: all 0.2s ease;
     display: inline-block;
-    font-family: sans-serif;
+    font-family: 'Madimi One', cursive;
+}
+
+.navigation-footer a:first-child {
+    margin-left: 0;
 }
 
 .navigation-footer a:hover {
     color: #003B93;
-    transform: scale(1.1);
+    transform: scale(1.05);
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
 }
 
 .social-icons img {
@@ -283,22 +357,13 @@ footer {
     transform: scale(1.2); 
 }
 
-
 @media (max-width: 1024px) {
-    .conteneur-pub-points {
-        flex-direction: column;
-        gap: 20px;
-        padding: 0 20px;
+    .conteneur-pub-lignes {
+        gap: 30px;
     }
     
-    .pub-point {
-        width: 100%;
-        max-width: 600px;
-        margin: 0 auto;
-    }
-    
-    .conteneur-pub-images img {
-        height: 80px;
+    .navigation-footer {
+        padding-left: 20px;
     }
 }
 
@@ -324,7 +389,6 @@ footer {
         margin: 0;
         border-bottom: 1px solid #eee;
         transform: none;
-        text-shadow: none;
     }
 
     .navigation-principale.active {
@@ -360,29 +424,76 @@ footer {
         margin-top: 40px;
     }
     
+    .banderole {
+        width: 90vw; 
+        max-width: 600px;
+    }
+    
     .conteneur-logos {
-        gap: 20px;
+        gap: 30px;
+        animation: defilement 15s linear infinite; 
     }
 
     .conteneur-logos img {
         width: 18vw;
-        max-width: 70px;
+        max-width: 100px;
     }
     
+    .pub-ligne {
+        flex-direction: column; 
+        padding: 20px;
+        text-align: center;
+    }
+    
+    .pub-ligne img {
+        order: -1; 
+        margin-bottom: 20px;
+        height: 150px;
+    }
+    
+    .pub-point {
+        max-width: 100%;
+        padding: 0;
+    }
+    
+    .pub-point h2 {
+        margin-bottom: 10px;
+    }
+    
+    .histoire {
+        flex-direction: column; 
+        gap: 20px; 
+        max-width: 900px;
+        margin: 20px auto; 
+    }
+    
+    .histoire-gauche, .histoire-centre, .histoire-droite {
+        text-align: left; 
+        margin-top: 0; 
+    }
+
     footer {
         flex-direction: column;
         text-align: center;
         padding: 20px 10px;
+        align-items: center;
     }
     
-    .logo-texte-footer, .navigation-footer, .social-icons {
+    .logo-texte-footer {
         margin-bottom: 15px;
+        align-items: center;
+        padding-right: 0;
     }
     
     .navigation-footer {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        align-items: center;
+        margin-bottom: 15px;
+        padding-right: 0;
+        padding-left: 0;
+        flex-grow: initial;
     }
     
     .navigation-footer a {
@@ -420,15 +531,6 @@ footer {
     .conteneur-logos img {
         width: 20vw;
         max-width: 60px;
-    }
-    
-    .conteneur-pub-images {
-        flex-direction: column;
-        align-items: center;
-    }
-    .conteneur-pub-images img {
-        margin: 10px 0;
-        height: 60px;
     }
     
     .histoire {
