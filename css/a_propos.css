@@ -25,3 +25,52 @@ h2,
 .navigation-footer a {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
+header {
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    font-family: 'Luckiest Guy', cursive;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-texte {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #003B93;
+}
+
+.logo {
+    height: 60px;
+    width: auto;
+    margin-right: 10px;
+}
+
+.titre-site {
+    font-size: 2.5rem;
+}
+
+.hamburger-menu {
+    display: none; 
+    cursor: pointer;
+    height: 40px; 
+    width: auto;
+}
+
+.navigation-principale a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333;
+    font-size: 1.1rem;
+    padding: 5px 10px;
+    transition: all 0.2s ease;
+    font-family: 'Madimi One', cursive;
+    display: inline-block;
+}
+
+.navigation-principale a:hover {
+    color: #003B93;
+    transform: scale(1.1); 
+}
