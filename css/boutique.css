@@ -1,48 +1,62 @@
-@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Madimi+One&display=swap');
+#boutique {
+    text-align: center;
+    padding: 40px 20px;
+}
 
-@media (max-width: 480px){
+section {
+    max-width: 1200px;
+    margin: 0 auto 80px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 0 20px;
+    text-align: center;
+}
 
+section > div {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
 
+section > div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
 
-    img {
-        overflow : scroll
+section img:first-child {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+section h3 {
+    margin-top: 5px;
+}
+
+section p:nth-of-type(1) {
+    font-weight: bold;
+    color: #003B93;
+    font-size: 1.2rem;
+}
+
+section p:nth-of-type(2) {
+    font-size: 0.9rem;
+    color: #000000;
+}
+
+.icone-panier {
+    width: 30px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+@media (max-width: 480px) {
+    section {
+        grid-template-columns: 1fr;
+        gap: 20px;
     }
-    h1,h2,h3,h4,h5,h6{
-        font-family: 'Luckiest Guy';
-        color : #003B93;
-    }
-
-    header nav a {
-        display : inline ;
-        position : relative;
-        left : 150px;
-        bottom : 45px;
-        margin : 20px;
-        color : black;
-        font-family : 'Madimi One';
-        font-size : 20px;
-    }
-
-    header img {
-        width: 35px;
-        position: relative;
-    }
-
-    header span {
-        left : 0px;
-        position : relative;
-        font-size: 40px;
-        color : #003B93;
-        font-family: 'Luckiest Guy';
-        bottom : 10px;
-    }
-
-    #boutique {
-        text-align: center;
-        position: relative;
-        padding: 40px;
-        font-size: 64px;
-        color : #003B93;
-    }
-
 }

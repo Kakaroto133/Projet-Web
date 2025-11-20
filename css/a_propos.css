@@ -1,1 +1,87 @@
+h1 {
+    text-align: center;
+    padding: 40px 20px 20px 20px;
+}
 
+p {
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+    padding: 0 20px;
+    line-height: 1.6;
+    color: #000000;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 40px;
+}
+
+h3 {
+    padding: 0 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.partenaires-images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px 20px;
+    flex-wrap: wrap;
+}
+
+.partenaires-images img {
+    width: 100px;
+    height: auto;
+    transition: transform 0.2s;
+}
+
+.partenaires-images img:hover {
+    transform: scale(1.1);
+}
+
+#form {
+    max-width: 600px;
+    margin: 40px auto 80px auto;
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #003B93;
+}
+
+#form input[type="text"], 
+#form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+#form textarea {
+    resize: vertical;
+}
+
+#form input[type="submit"] {
+    background-color: #003B93;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    font-family: 'Madimi One', cursive;
+}
+
+#form input[type="submit"]:hover {
+    background-color: #002e73;
+}
