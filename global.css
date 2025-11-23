@@ -123,10 +123,13 @@ header {
     display: inline-block;
 }
 
+/* CORRECTION 1/2: Définition globale de la taille (30px) pour PC/Tablette et comme base. */
 .theme-toggle {
     margin: 0 10px; 
-    vertical-align: middle;
-    height: 70px;
+    vertical-align: middle; 
+    height: 30px; /* AJOUTÉ: Taille pour PC/Tablette */
+    width: 30px;  /* AJOUTÉ: Taille pour PC/Tablette */
+    cursor: pointer;
 }
 
 .navigation-principale a:hover {
@@ -289,20 +292,15 @@ footer {
         transform: none;
     }
     
-    /* STYLES DÉDIÉS AU LOGO DE THÈME EN MOBILE */
-    .theme-toggle {
-        display: block; 
-        margin: 15px auto 10px auto; /* Centre l'icône horizontalement et ajoute de l'espace */
-        padding: 0 20px;
-        border-bottom: 1px solid #eee; /* Conserve le séparateur */
-        width: fit-content; /* Ne prend que la largeur nécessaire */
-        cursor: pointer;
-    }
+    /* CORRECTION 2/2: On retire la règle mobile .theme-toggle qui contredisait le 30px et le centrage.
+       On utilise uniquement la règle combinée ci-dessous qui fonctionne maintenant que la taille 30px est globale. */
 
     .navigation-principale.active {
         display: flex;
     }
     
+    /* Cette règle applique le style du bloc de menu (padding, centrage, bordure) à l'image.
+       Puisque la taille de l'image est maintenant de 30px, le centrage fonctionne. */
     .navigation-principale a, .theme-toggle {
         display: block; 
         padding: 15px 20px;
