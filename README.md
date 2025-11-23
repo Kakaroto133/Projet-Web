@@ -5,7 +5,7 @@
 **Lien d'hébergement du site web :** https://kakaroto133.github.io/Projet-Web/
 <br><br>
 **Lien vers la conversation de Gemini pour de l'aide :** ***A VENIR***
-<br><br><br>
+<br>
 
 **Sources :**
 
@@ -19,7 +19,6 @@ Logo La boite à objets : https://www.facebook.com/photo/?fbid=912307624241250&s
 Logo qualité premium : https://www.flaticon.com/fr/icone-gratuite/qualite_310831?term=qualit%C3%A9&page=1&position=8&origin=tag&related_id=310831<br>
 Logo livraison rapide : https://www.flaticon.com/fr/icone-gratuite/livraison-rapide_98999<br>
 Logo retours faciles : https://fr.freepik.com/vecteurs-premium/icone-fleche-retour-icone-fleche-retour-image-stock-illustration-vectorielle_49474208.htm<br>
-Logo SNK STORE : généré avec ChatGPT<br>
 Logo Instagram : https://www.pngkit.com/view/u2q8w7o0w7u2o0w7_ig-png-logo-svg-transparent-instagram-logo-png/<br>
 Logo LinkedIn : https://www.template.net/editable/85938/grey-linkedin-vector<br>
 Logo X : https://logowik.com/grey-x-icon-66205.html<br>
