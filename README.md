@@ -3,10 +3,13 @@
 **Lien de la maquette Figma :** https://www.figma.com/site/1hmi7xO5RueiX2cvtccGBV/Sans-titre?node-id=0-1&t=7MybZY07QmXh4CKp-1
 
 **Lien d'hébergement du site web :** https://kakaroto133.github.io/Projet-Web/
+<br><br>
+**Lien vers la conversation de Gemini pour de l'aide :** ***A VENIR***
 <br><br><br>
+
 **Sources :**
 
-Logo "L'attaque des titans : https://fr.wikipedia.org/wiki/L%27Attaque_des_Titans<br>
+Logo "L'attaque des titans" : https://fr.wikipedia.org/wiki/L%27Attaque_des_Titans<br>
 Vidéo YouTube : https://www.youtube.com/shorts/IROkiArS0XI<br>
 Logo Funko Pop Figurine : https://ph.pinterest.com/pin/funko-pop-logo-sticker-sticker-for-sale-by-sashacarey--999517711070021826/<br>
 Logo Ikea : https://www.stickpng.com/img/furniture/ikea-furniture/ikea-logo<br>
