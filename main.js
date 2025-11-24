@@ -23,17 +23,16 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // charger le thème (localstorage ou preference systeme)
+    // charger le thème (localstorage)
     const savedTheme = localStorage.getItem('theme');
     
     if (savedTheme) {
+        // applique le thème enregistré
         applyTheme(savedTheme);
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        // applique le thème sombre par défaut si le système le préfère
-        applyTheme('dark');
-        localStorage.setItem('theme', 'dark');
     } else {
+        // charge le mode clair par défaut et l'enregistre
         applyTheme('light');
+        localStorage.setItem('theme', 'light');
     }
 
 
@@ -42,11 +41,11 @@ document.addEventListener('DOMContentLoaded', () => {
         themeToggle.style.cursor = 'pointer'; 
         themeToggle.addEventListener('click', () => {
             if (body.classList.contains('dark-mode')) {
-                // passage en mode clair
+                // passe en mode clair
                 applyTheme('light');
                 localStorage.setItem('theme', 'light');
             } else {
-                // passage en mode sombre
+                // passe en mode sombre
                 applyTheme('dark');
                 localStorage.setItem('theme', 'dark');
             }

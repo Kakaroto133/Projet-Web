@@ -1,16 +1,25 @@
 @media (max-width: 480px){
-    
+
 }
 
 h1{
-    position: relative ;
+    position: relative;
     text-align: center;
 }
 .intro { 
     text-align: center;
-    margin : 20px;
+    margin: 50px;
 }
 
 h2{
-    text-align: left;
+    position: relative;
+    text-align: center;
+}
+.Mission {
+    text-align: center;
+    margin: 30px;
+}
+h3{
+    position: relative;
+    
 }

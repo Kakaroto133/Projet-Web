@@ -11,7 +11,7 @@ html {
 }
 
 body {
-    font-family: 'Madimi One', cursive; 
+    font-family: 'Madimi One'; 
 }
 
 /* animation d'apparition fluide */
@@ -54,13 +54,13 @@ h1, h2, h3, h4, h5, h6,
 
 /* titres standards */
 h1 {
-    font-family: 'Luckiest Guy', cursive;
+    font-family: 'Luckiest Guy';
     color: #003B93;
     font-size: 65px;
 }
 
 h2 {
-    font-family: 'Luckiest Guy', cursive;
+    font-family: 'Luckiest Guy';
     color: #003B93;
     font-size: 40px;
     margin-top: 0;
@@ -68,7 +68,7 @@ h2 {
 }
 
 h3 {
-    font-family: 'Luckiest Guy', cursive;
+    font-family: 'Luckiest Guy';
     color: #003B93; 
     font-size: 1.5rem;
     margin-top: 25px;
@@ -82,7 +82,7 @@ header {
     padding-top: 10px;
     margin-bottom: 30px;
     background-color: #ffffff;
-    font-family: 'Luckiest Guy', cursive;
+    font-family: 'Luckiest Guy';
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -121,7 +121,7 @@ header {
     font-size: 1.1rem;
     padding: 5px 10px;
     transition: all 0.2s ease;
-    font-family: 'Madimi One', cursive;
+    font-family: 'Madimi One';
     display: inline-block;
 }
 
@@ -146,7 +146,7 @@ header {
     color: white;
     border: none;
     border-radius: 10px;
-    font-family: 'Madimi One', cursive;
+    font-family: 'Madimi One';
     cursor: pointer;
     display: inline-block;
     text-decoration: none;
@@ -168,7 +168,7 @@ header {
     color: #003B93;
     border: 1px solid #003B93;
     border-radius: 8px;
-    font-family: 'Madimi One', cursive;
+    font-family: 'Madimi One';
     cursor: pointer;
     text-decoration: none;
     display: inline-block;
@@ -214,7 +214,7 @@ footer {
 
 .titre-site-footer {
     font-size: 1.8rem;
-    font-family: 'Luckiest Guy', cursive;
+    font-family: 'Luckiest Guy';
     color: #003B93;
 }
 
@@ -231,7 +231,7 @@ footer {
     margin: 0 15px;
     padding: 0;
     transition: all 0.2s ease;
-    font-family: 'Madimi One', cursive;
+    font-family: 'Madimi One';
     display: inline-block;
 }
 
