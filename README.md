@@ -8,7 +8,7 @@
 <br><br>
 **Sources :**
 
-Logo "L'attaque des titans : https://fr.wikipedia.org/wiki/L%27Attaque_des_Titans<br>
+Logo "L'attaque des titans" : https://fr.wikipedia.org/wiki/L%27Attaque_des_Titans<br>
 Vidéo YouTube : https://www.youtube.com/shorts/IROkiArS0XI<br>
 Logo Funko Pop Figurine : https://ph.pinterest.com/pin/funko-pop-logo-sticker-sticker-for-sale-by-sashacarey--999517711070021826/<br>
 Logo Ikea : https://www.stickpng.com/img/furniture/ikea-furniture/ikea-logo<br>
