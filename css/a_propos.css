@@ -1,1 +1,16 @@
+@media (max-width: 480px){
+    
+}
 
+h1{
+    position: relative ;
+    text-align: center;
+}
+.intro { 
+    text-align: center;
+    margin : 20px;
+}
+
+h2{
+    text-align: left;
+}

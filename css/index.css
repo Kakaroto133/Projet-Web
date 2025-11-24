@@ -1,9 +1,9 @@
-/*---INTRODUCTION---*/
+/* introduction */
 .introduction {
     max-width: 1200px; 
     margin: 0 auto;
     text-align: center;
-    padding: 40px 20px;
+    padding: 2px 20px;
 }
 
 .titre-principal {
@@ -40,7 +40,7 @@
     margin-bottom: 80px;
 }
 
-/*---PARTENAIRES---*/
+/* partenaires */
 @keyframes defilement {
     from {
         transform: translateX(0);
@@ -73,6 +73,7 @@
     animation: defilement 20s linear infinite; 
     width: fit-content;
     min-width: 200%;
+    list-style-type: none;
 }
 
 .conteneur-logos img {
@@ -83,7 +84,7 @@
     flex-shrink: 0; 
 }
 
-/*---PUBLICITÉ---*/
+/* publicité */
 .pub {
     padding: 40px 20px;
     text-align: center;
@@ -117,11 +118,11 @@
     flex-shrink: 0;
 }
 
-/*---HISTOIRE---*/
+/* histoire */
 .histoire {
     max-width: 1200px;
-    margin: 40px auto 80px auto;
-    padding: 20px;
+    margin: 0px auto 0px auto;
+    padding: 0 20px;
     display: flex;
     justify-content: space-between;
     gap: 30px;
@@ -138,7 +139,7 @@
     color: #000000; 
 }
 
-/*---MEDIA QUERIES SPÉCIFIQUES À L'ACCUEIL---*/
+/* media queries accueil */
 @media (max-width: 768px) {
     .titre-principal {
         font-size: 45px;

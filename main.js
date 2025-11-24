@@ -1,7 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // ------------------------------------------
-    // 1. GESTION DU MENU HAMBURGER
-    // ------------------------------------------
+    
+    // 1. gestion du menu hamburger
     const hamburger = document.querySelector('.hamburger-menu');
     const nav = document.querySelector('.navigation-principale');
 
@@ -11,28 +10,26 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // ------------------------------------------
-    // 2. GESTION DU MODE SOMBRE / CLAIR
-    // ------------------------------------------
+    // 2. gestion du mode sombre / clair
     const themeToggle = document.querySelector('.theme-toggle');
     const body = document.body;
 
-    // Fonction pour appliquer le thème
+    // fonction pour appliquer le thème
     function applyTheme(theme) {
         if (theme === 'dark') {
             body.classList.add('dark-mode');
-            // Si vous avez deux icônes différentes (lune/soleil), changez la source ici
         } else {
             body.classList.remove('dark-mode');
         }
     }
 
-    // Charger le thème depuis le localStorage ou détecter la préférence du système
+    // charger le thème (localstorage ou preference systeme)
     const savedTheme = localStorage.getItem('theme');
     
     if (savedTheme) {
         applyTheme(savedTheme);
     } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        // applique le thème sombre par défaut si le système le préfère
         applyTheme('dark');
         localStorage.setItem('theme', 'dark');
     } else {
@@ -40,16 +37,16 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 
-    // Écouteur d'événement pour le clic sur l'icône
+    // écouteur de clic pour changer le thème
     if (themeToggle) {
         themeToggle.style.cursor = 'pointer'; 
         themeToggle.addEventListener('click', () => {
             if (body.classList.contains('dark-mode')) {
-                // Passage en mode clair
+                // passage en mode clair
                 applyTheme('light');
                 localStorage.setItem('theme', 'light');
             } else {
-                // Passage en mode sombre
+                // passage en mode sombre
                 applyTheme('dark');
                 localStorage.setItem('theme', 'dark');
             }

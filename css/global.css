@@ -14,7 +14,7 @@ body {
     font-family: 'Madimi One', cursive; 
 }
 
-/*---ANIMATION D'APPARITION FLUIDE (Fade-in)---*/
+/* animation d'apparition fluide */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -39,7 +39,7 @@ header { animation-delay: 0s; }
 footer { animation-delay: 0.6s; }
 
 
-/*---POLICES ET OMBRES---*/
+/* polices et ombres */
 .titre-site,
 .navigation-principale a,
 .titre-principal,
@@ -52,7 +52,7 @@ h1, h2, h3, h4, h5, h6,
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-/*---TITRES STANDARDS---*/
+/* titres standards */
 h1 {
     font-family: 'Luckiest Guy', cursive;
     color: #003B93;
@@ -75,10 +75,12 @@ h3 {
     margin-bottom: 10px;
 }
 
-/*---HEADER ET NAVIGATION---*/
+/* header et navigation */
 header {
     width: 100%;
-    padding: 10px 20px;
+    padding: 0px 20px;
+    padding-top: 10px;
+    margin-bottom: 30px;
     background-color: #ffffff;
     font-family: 'Luckiest Guy', cursive;
     display: flex;
@@ -123,12 +125,11 @@ header {
     display: inline-block;
 }
 
-/* CORRECTION 1/2: Définition globale de la taille (30px) pour PC/Tablette et comme base. */
 .theme-toggle {
     margin: 0 10px; 
     vertical-align: middle; 
-    height: 30px; /* AJOUTÉ: Taille pour PC/Tablette */
-    width: 30px;  /* AJOUTÉ: Taille pour PC/Tablette */
+    height: 30px;
+    width: 30px;
     cursor: pointer;
 }
 
@@ -137,7 +138,7 @@ header {
     transform: scale(1.1); 
 }
 
-/*---BOUTONS---*/
+/* boutons */
 .bouton {
     padding: 10px 20px;
     font-size: 1rem;
@@ -181,7 +182,7 @@ header {
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
 }
 
-/*---FOOTER---*/
+/* footer */
 footer {
     background-color: #ffffff;
     padding: 20px 50px;
@@ -191,6 +192,7 @@ footer {
     color: #000000;
     text-align: initial;
     border-top: 1px solid #ccc;
+    margin-top: 50px;
 }
 
 .logo-texte-footer {
@@ -259,7 +261,7 @@ footer {
     transform: scale(1.2); 
 }
 
-/*---MEDIA QUERIES GLOBALES--- */
+/* media queries globales */
 
 @media (max-width: 1024px) {
     .navigation-footer {
@@ -269,13 +271,13 @@ footer {
 
 @media (max-width: 768px) {
     
-    /*---MENU HAMBURGER---*/
+    /* menu hamburger */
     .navigation-principale {
         display: none; 
         flex-direction: column;
         background-color: #f8f8f8;
         position: absolute;
-        top: 80px; 
+        top:65px; 
         left: 0;
         width: 100%;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -292,18 +294,13 @@ footer {
         transform: none;
     }
     
-    /* CORRECTION 2/2: On retire la règle mobile .theme-toggle qui contredisait le 30px et le centrage.
-       On utilise uniquement la règle combinée ci-dessous qui fonctionne maintenant que la taille 30px est globale. */
 
     .navigation-principale.active {
         display: flex;
     }
     
-    /* Cette règle applique le style du bloc de menu (padding, centrage, bordure) à l'image.
-       Puisque la taille de l'image est maintenant de 30px, le centrage fonctionne. */
     .navigation-principale a, .theme-toggle {
         display: block; 
-        padding: 15px 20px;
         text-align: center;
         margin: 0 auto; 
         border-bottom: 1px solid #eee;
@@ -327,7 +324,7 @@ footer {
         height: 50px;
     }
     
-    /*---FOOTER RESPONSIVE---*/
+    /* footer responsive */
     footer {
         flex-direction: column;
         text-align: center;
@@ -378,15 +375,14 @@ footer {
 }
 
 
-
-/*---MODE SOMBRE---*/
+/* mode sombre */
 
 body.dark-mode {
     background-color: #4b4b4b;
     color: #FFFFFF;
 }
 
-/*---HEADER / FOOTER---*/
+/* header / footer dark mode */
 body.dark-mode header,
 body.dark-mode footer {
     background-color: #4b4b4b;
@@ -396,7 +392,7 @@ body.dark-mode footer {
 body.dark-mode .logo-texte,
 body.dark-mode .titre-site,
 body.dark-mode .titre-site-footer {
-    color: #FFFFFF;
+    color: #fc4d4d;
 }
 
 body.dark-mode .navigation-principale a,
@@ -406,36 +402,36 @@ body.dark-mode .navigation-footer a {
 
 body.dark-mode .navigation-principale a:hover,
 body.dark-mode .navigation-footer a:hover {
-    color: #4A90E2;
+    color: #fc4d4d;
 }
 
-/* --- TITRES ET BOUTONS --- */
+/* titres et boutons dark mode */
 body.dark-mode h1,
 body.dark-mode h2,
 body.dark-mode h3 {
-    color: #4A90E2;
+    color: #fc4d4d;
 }
 
 body.dark-mode .bouton {
-    background-color: #4A90E2; 
+    background-color: #fc4d4d; 
 }
 
 body.dark-mode .bouton:hover {
-    background-color: #357ABD; 
+    background-color: #db4343; 
 }
 
 body.dark-mode .bouton-secondaire {
     background-color: #333;
     color: #FFFFFF;
-    border-color: #4A90E2;
+    border-color: #fc4d4d;
 }
 
 body.dark-mode .bouton-secondaire:hover {
-    background-color: #4A90E2;
+    background-color: #db4343;
     color: #121212;
 }
 
-/* --- TEXTE ET HISTOIRE EN MODE SOMBRE --- */
+/* texte et histoire dark mode */
 
 body.dark-mode .sous-titre {
     color: #FFFFFF;
@@ -448,7 +444,7 @@ body.dark-mode .histoire-droite {
     color: #FFFFFF;
 }
 
-/*---MENU HAMBURGER EN MODE SOMBRE (mobile)---*/
+/* menu hamburger dark mode (mobile) */
 @media (max-width: 768px) {
     body.dark-mode .navigation-principale {
         background-color: #3e3e3e;
@@ -459,7 +455,7 @@ body.dark-mode .histoire-droite {
         border-bottom: 1px solid #555;
     }
     
-    /* APPLICATION DU SÉPARATEUR SOMBRE AU LOGO DE THÈME */
+    /* separateur logo dark mode */
     body.dark-mode .theme-toggle {
         border-bottom: 1px solid #555; 
         filter: invert(1);
