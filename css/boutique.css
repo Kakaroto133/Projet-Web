@@ -2,8 +2,6 @@
 
 @media (max-width: 480px){
 
-
-
     img {
         overflow : scroll
     }
@@ -45,4 +43,90 @@
         color : #003B93;
     }
 
+    img {
+        width: 275px;
+        top: 10px;
+        position: relative;
+        left: 20px;
+    }
+
+    .mug1 img{
+        left : 30px;
+    }
+    
+    h3{
+        margin: 25px;
+        position: relative;
+        padding-bottom : 25px;
+        font-size: 36px;
+        bottom: 60px;
+        margin-left:20px;
+    }
+    
+    .prix {
+        font-family: 'Madimi One';
+        color: #2c5eaac9;
+        position: relative;
+        font-size : 36px;
+        margin-bottom : 40px;
+        left: 15px;
+        border: solid;
+        border-width: 4px;
+        border-color: #003b93c9;
+        border-radius: 10px;
+        display: inline-block;
+        background-color: #c6ddff;
+    }
+    
+    figure {
+        position: relative;
+        border: solid;
+        border-width: 10px;
+        border-color: #003b93c9;
+        border-radius: 10px;
+        margin-left: 50px;
+        margin-right: 75px;
+        margin-bottom: 25px;
+    }
+
+    .type {
+        color : grey;
+        font-size: 15px;
+        font-family: 'Madimi One';
+        position: relative;
+        bottom: 190px;
+        padding-left: 10px ;
+        margin-bottom: -50px;
+    }
+    
+    
+    .panier {
+        position: relative;
+        width : 50px;
+        left: 230px;
+        top: 170px;
+        border: solid;
+        border-width: 4px;
+        border-color: #003b93c9;
+        border-radius: 10px;
+        display: inline-block;
+        background-color: #ff3f0fbd;       
+    
+    }
+
+    .pop .panier  {
+        top: 145px;
+    }
+
+    .portecle .panier {
+        top: 145px;
+    }
+
+    .mug2 .panier {
+        top: 145px;
+    }
+
+    .mug1 .panier {
+
+    }
 }
