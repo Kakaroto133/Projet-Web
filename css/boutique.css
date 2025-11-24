@@ -84,9 +84,11 @@
         border-width: 10px;
         border-color: #003b93c9;
         border-radius: 10px;
+        display: inline-block;
         margin-left: 50px;
         margin-right: 75px;
         margin-bottom: 25px;
+        
     }
 
     .type {
@@ -126,7 +128,5 @@
         top: 145px;
     }
 
-    .mug1 .panier {
 
-    }
 }
