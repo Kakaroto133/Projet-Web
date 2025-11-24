@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Madimi+One&display=swap');
+
+@media (max-width: 480px){
+
+
+
+    img {
+        overflow : scroll
+    }
+    h1,h2,h3,h4,h5,h6{
+        font-family: 'Luckiest Guy';
+        color : #003B93;
+    }
+
+    header nav a {
+        display : inline ;
+        position : relative;
+        left : 150px;
+        bottom : 45px;
+        margin : 20px;
+        color : black;
+        font-family : 'Madimi One';
+        font-size : 20px;
+    }
+
+    header img {
+        width: 35px;
+        position: relative;
+    }
+
+    header span {
+        left : 0px;
+        position : relative;
+        font-size: 40px;
+        color : #003B93;
+        font-family: 'Luckiest Guy';
+        bottom : 10px;
+    }
+
+    #boutique {
+        text-align: center;
+        position: relative;
+        padding: 40px;
+        font-size: 64px;
+        color : #003B93;
+    }
+
+}
