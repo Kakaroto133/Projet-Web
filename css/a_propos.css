@@ -15,15 +15,41 @@ h2{
     position: relative;
     text-align: center;
 }
+
 .mission {
     text-align: center;
     margin: 30px;
 }
+
 h3{
     position: relative;
     text-align: center;
 }
+
 .val{
     text-align: center;
 }
 
+.partenaires{
+    margin-top: 100px;
+}
+
+.partenaires img {
+    height: 100px;
+}
+
+.contact {
+    margin-top: 100px;
+}
+
+.email {
+    text-align: center;
+}
+
+.téléphone {
+    text-align: center;
+}
+
+.adresse {
+    text-align: center;
+}
