@@ -48,9 +48,9 @@ Création d’un site web autour de l’univers **L’Attaque des Titans** prés
 |--------|--------|
 | Mug 1 | https://www.amazon.fr/Attack-LAttaque-Unisexe-multicolore-Céramique/dp/B0F3382962 |
 | Mug 2 | https://www.abystyle.com/fr/l-attaque-des-titans/8119-l-attaque-des-titans-mug-bataillon-d-exploration-3665361165798.html |
-| Veste | https://manga-imperial.fr/collections/vestes-attaque-des-titans/attack-on-titan |
+| Veste | https://manga-imperial.fr/collections/vestes-attaque-des-titans/products/veste-teddy-attack-on-titan |
 | Doudoune | https://figurinemangafrance.fr/products/veste-bataillon-dexploration-lattaque-des-titans™ |
-| Porte-clé (clé) | https://www.amazon.in/RV-Mart-Attack-Keychain-Bronze/dp/B0CPT39M74 |
+| Porte-clé | https://www.amazon.in/RV-Mart-Attack-Keychain-Bronze/dp/B0CPT39M74 |
 | Lots de porte-clés | https://www.hakijap.com/accessoires-4/autres/porte-cle-attaque-des-titans.html |
 | Figurine Pop | https://www.elbenwald.fr/l-attaque-des-titans/l-attaque-des-titans-levi-sp-1-figurine-funko-pop |
 | Figurine | https://www.amazon.fr/Figurine-dAttaque-Titan-Statuette-officiellement/dp/B093PM8ZYL |
