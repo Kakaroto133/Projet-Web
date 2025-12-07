@@ -2,9 +2,6 @@
 
 @media (max-width: 480px){
 
-    img {
-        overflow : scroll
-    }
     h1,h2,h3,h4,h5,h6{
         font-family: 'Luckiest Guy';
         color : #003B93;
@@ -49,10 +46,6 @@
         position: relative;
         left: 20px;
     }
-
-    .mug1 img{
-        left : 30px;
-    }
     
     h3{
         margin: 25px;
@@ -63,6 +56,13 @@
         margin-left:20px;
     }
     
+    section {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 20px 10px;
+    }
+
     .prix {
         font-family: 'Madimi One';
         color: #2c5eaac9;
@@ -88,7 +88,6 @@
         margin-left: 50px;
         margin-right: 75px;
         margin-bottom: 25px;
-        
     }
 
     .type {
@@ -105,32 +104,13 @@
     .panier {
         position: relative;
         width : 50px;
-        left: 230px;
-        top: 170px;
         border: solid;
         border-width: 4px;
         border-color: #003b93c9;
         border-radius: 10px;
-        display: inline-block;
         background-color: #ff3f0fbd;       
-    
-    }
-
-    .mug1 .panier{
-        top : 175px;
-        left : 220px;
-    }
-
-    .pop .panier  {
-        top: 145px;
-    }
-
-    .portecle .panier {
-        top: 145px;
-    }
-
-    .mug2 .panier {
-        top: 145px;
+        margin-left : 210px;
+        margin-bottom: -165px;
     }
 
 
