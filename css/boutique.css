@@ -52,7 +52,7 @@
         position: relative;
         padding-bottom : 25px;
         font-size: 36px;
-        bottom: 60px;
+        bottom: 40px;
         margin-left:20px;
     }
     
@@ -95,9 +95,8 @@
         font-size: 15px;
         font-family: 'Madimi One';
         position: relative;
-        bottom: 190px;
-        padding-left: 10px ;
-        margin-bottom: -50px;
+        margin-left: 10px ;
+        top: -150px;
     }
     
     
