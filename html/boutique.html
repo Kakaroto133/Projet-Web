@@ -1,120 +1,127 @@
-@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Madimi+One&display=swap');
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SNK STORE | Boutique</title>
+    <link rel="stylesheet" href="../css/boutique.css">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="icon" href="../img/icone.ico">
+</head>
 
-h1,h2,h3,h4,h5,h6{
-    font-family: 'Luckiest Guy';
-    color : #003B93;
-}
-
-
-#boutique {
-    text-align: center;
-    position: relative;
-    font-size: 64px;
-    color : #003B93;
-}
-
-
-h1 {
-    position: relative;
-    text-align: center;
-}
-
-.prix {
-    font-family: 'Madimi One';
-    color: #2c5eaac9;
-    position: relative;
-    border: solid;
-    border-width: 4px;
-    border-color: #003b93c9;
-    border-radius: 10px;
-    display: inline-block;
-    background-color: #c6ddff;
-}
-
-figure {
-    position: relative;
-    border: solid;
-    border-width: 10px;
-    border-color: #003b93c9;
-    border-radius: 10px;
-    display: inline-block;
-}
-
-.type {
-    color : grey;
-    font-family: 'Madimi One';
-    position: relative;
-}
-
-.panier {
-    position: relative;
-    width : 50px;
-    border: solid;
-    border-width: 4px;
-    border-color: #1c61c897;
-    border-radius: 10px;
-    background-color: #ff3f0fbd;       
-}
-
-
-@media (max-width: 480px){
-
-    h1{
-        align-items: center;
-    }
-
-    /*
-    #boutique {
-        padding: 40px;    
-    }*/
-
-    img {
-        width: 275px;
-        top: 10px;
-        left: 20px;
-    }
+<body>
     
-    h3{
-        margin: 25px;
-        position: relative;
-        padding-bottom : 25px;
-        font-size: 36px;
-        bottom: 40px;
-        margin-left:20px;
-    }
+<header>
+    <a href="../index.html" class="logo-texte">
+        <img src="../img/logo.webp" alt="Logo de SNK STORE" class="logo">
+        <span class="titre-site">SNK STORE</span>
+    </a>
     
-    section {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 20px;
-        padding: 20px 10px;
-    }
-
-    .prix {
-        margin-bottom : 40px;
-        left: 15px;  
-        font-size: 36px;
-    }
+<nav class="navigation-principale">
+    <a href="../index.html">Accueil</a>
+    <a href="html/boutique.html">Boutique</a>
+    <a href="html/a_propos.html">À Propos</a>
+    <img src="../img/dark-theme.webp" alt="Logo du Mode Sombre ou Mode Clair" class="theme-toggle" height="30"> 
+</nav>
     
-    figure {
-        margin-left: 50px;
-        margin-right: 75px;
-        margin-bottom: 25px;
-    }
-
-    .type {
-        font-size: 15px;
-        margin-left: 10px ;
-        top: -150px;
-    }
+    <img src="../img/logo_menu.webp" alt="Menu" class="hamburger-menu">
     
+</header>
+
+<h1 class="boutique">Boutique⚔️</h1>
+
+<section>
+    <figure class="mug1">
+        <img src="../img/mug1.webp" alt="Mug avec le suymbole du bataillon d'exploration">
+        <img class="panier" src="../img/panier.webp" alt="Logo panier">
+        <h3>Mug Bataillon d'exploration</h3>
+        <p class="prix">9,99€</p>
+        <p class="type">Vêtements</p>
+    </figure>
+
+    <figure class="mug2">
+        <img src="../img/mug2.webp" alt="Mug avec Livai, Hansi et Erwin">
+                <a href="../index.html">
+        <img class="panier" src="../img/panier.webp" alt="Logo panier"></a>
+        <h3>Mug Trio legendaire</h3>
+        <p class="prix">9,99€</p>
+        <p class="type">Vêtements</p>
+    </figure>
+
+    <figure class="cle">
+        <img src="../img/cle.webp" alt="Porte clé : clé de la cave d'Eren">
+        <img class="panier" src="../img/panier.webp" alt="Logo panier">
+        <h3>Porte clé : Clé de la cave d'eren</h3>
+        <p class="prix">5,99€</p>
+        <p class="type">Cosmétique</p>
+    </figure>
+
+    <figure class="portecle">
+        <img src="../img/portecle.webp" alt="Veste avec le logo du bataillon d'exploration">
+        <img class="panier" src="../img/panier.webp" alt="Logo panier">
+        <h3>Lots de 6 porte-clés</h3>
+        <p class="prix">5,99€</p>
+        <p class="type">Cosmétique</p>
+    </figure>
+
+    <figure class="veste">
+        <img src="../img/veste.webp" alt="Doudoune avec le logo du bataillon d'exploration">
+        <img class="panier" src="../img/panier.webp" alt="Logo panier">
+        <h3>Veste: Bataillon d'exploration</h3>
+        <p class="prix">29,99€</p>
+        <p class="type">Vêtements</p>
+    </figure>
+
+    <figure class="doudoune">
+        <img src="../img/doudoune.webp" alt="Figurine de Reiner contre Eren en titan">
+        <img class="panier" src="../img/panier.webp" alt="Logo panier">
+        <h3>Doudoune: Bataillon d'exploration</h3>
+        <p class="prix">49,99€</p>
+        <p class="type">Vêtements</p>
+    </figure>
+
+    <figure class="figurine">
+        <img src="../img/figurine.webp" alt="Lots de 6 porte clé">
+        <img class="panier" src="../img/panier.webp" alt="Logo panier">
+        <h3>Figurine :Eren vs Reiner</h3>
+        <p class="prix">399,99€</p>
+        <p class="type">Figurine</p>
+    </figure>
+
+    <figure class="pop">
+        <img src="../img/pop2.webp" alt="Figurine Pop de livai dans la saison 4">
+        <img class="panier" src="../img/panier.webp" alt="Logo panier">
+        <h3>Figurine Pop:livai S4</h3>
+        <p class="prix">14,99€</p>
+        <p class="type">Figurine</p>
+    </figure>
+</section>
+
+
+
+
+<footer>
+    <div class="logo-texte-footer">
+        <a href="../index.html">
+            <img src="../img/logo.webp" alt="Logo de SNK STORE" class="logo-footer">
+            <span class="titre-site-footer">SNK STORE</span>
+        </a>
+    </div>
     
-    .panier {
-        display: inline-flex;
-        width : 50px;
-        margin-left: 250px;
-        margin-bottom: -165px;
-    }
+    <nav class="navigation-footer">
+        <a href="../index.html">Accueil</a>
+        <a href="html/boutique.html">Boutique</a>
+        <a href="html/a_propos.html">À Propos</a>
+    </nav>
+    
+    <div class="social-icons">
+        <a href="#"><img src="../img/logo_x.webp" alt="Logo de x.com"></a>
+        <a href="#"><img src="../img/logo_insta.webp" alt="Logo d'instagram"></a>  
+        <a href="#"><img src="../img/logo_linkedin.webp" alt="Logo de Linkedin"></a>
+    </div>
+</footer>
 
 
-}
+</body>
+
+</html>
