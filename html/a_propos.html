@@ -71,18 +71,23 @@
     <h3>Adresse</h3>
     <p class="adresse">123  Avenue du Bataillon, 13100 Aix-en-Provence, France</p>
 
-    <form id="form" action="" method="post" enctype="text/plain">
-    <p>
-    <label for="nom">Nom</label>
-    <input id="nom" type="text" name="nom" value=" "><br>
-    <label for="Email">Email</label>
-    <input id="Email" type="text" name="Email" value=" "><br>
-    </select><br>
-    <label for="Message">Message</label>
-    <textarea name="impression" rows="2" cols="50">
-    </textarea><br>
-    <input type="submit" value="Envoyer">
-    </p>
+    <form id="form" action="formulaire-reponse" method="post">
+        <div>
+            <label for="nom">NOM</label>
+            <input id="nom" type="text" name="nom" required>
+        </div>
+
+        <div>
+            <label for="Email">EMAIL</label>
+            <input id="Email" type="text" name="Email" required>
+        </div>
+
+        <div>
+            <label for="Message">MESSAGE</label>
+            <textarea name="Message" rows="5" cols="20"required>
+            </textarea>
+        </div>
+        <button type="submit">Envoyer</button>
     </form>
 
     <footer>
