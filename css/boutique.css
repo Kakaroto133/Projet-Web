@@ -1,49 +1,73 @@
 @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Madimi+One&display=swap');
 
-@media (max-width: 480px){
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Luckiest Guy';
+    color : #003B93;
+}
 
-    h1,h2,h3,h4,h5,h6{
-        font-family: 'Luckiest Guy';
-        color : #003B93;
-    }
 
-    header nav a {
-        display : inline ;
-        position : relative;
-        left : 150px;
-        bottom : 45px;
-        margin : 20px;
-        color : black;
-        font-family : 'Madimi One';
-        font-size : 20px;
-    }
+#boutique {
+    text-align: center;
+    position: relative;
+    font-size: 64px;
+    color : #003B93;
+}
 
-    header img {
-        width: 35px;
-        position: relative;
-    }
 
-    header span {
-        left : 0px;
-        position : relative;
-        font-size: 40px;
-        color : #003B93;
-        font-family: 'Luckiest Guy';
-        bottom : 10px;
-    }
+h1 {
+    position: relative;
+    text-align: center;
+}
 
+.prix {
+    font-family: 'Madimi One';
+    color: #2c5eaac9;
+    position: relative;
+    border: solid;
+    border-width: 4px;
+    border-color: #003b93c9;
+    border-radius: 10px;
+    display: inline-block;
+    background-color: #c6ddff;
+}
+
+figure {
+    position: relative;
+    border: solid;
+    border-width: 10px;
+    border-color: #003b93c9;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.type {
+    color : grey;
+    font-family: 'Madimi One';
+    position: relative;
+}
+
+.panier {
+    position: relative;
+    width : 50px;
+    border: solid;
+    border-width: 4px;
+    border-color: #1c61c897;
+    border-radius: 10px;
+    background-color: #ff3f0fbd;       
+}
+
+
+@media (max-width: 500px){
+
+
+    /*
     #boutique {
-        text-align: center;
-        position: relative;
-        padding: 40px;
-        font-size: 64px;
-        color : #003B93;
-    }
+        padding: 40px;    
+    }*/
 
     img {
         width: 275px;
         top: 10px;
-        position: relative;
         left: 20px;
     }
     
@@ -64,51 +88,28 @@
     }
 
     .prix {
-        font-family: 'Madimi One';
-        color: #2c5eaac9;
-        position: relative;
-        font-size : 36px;
         margin-bottom : 40px;
-        left: 15px;
-        border: solid;
-        border-width: 4px;
-        border-color: #003b93c9;
-        border-radius: 10px;
-        display: inline-block;
-        background-color: #c6ddff;
+        left: 15px;  
+        font-size: 36px;
     }
     
     figure {
-        position: relative;
-        border: solid;
-        border-width: 10px;
-        border-color: #003b93c9;
-        border-radius: 10px;
-        display: inline-block;
         margin-left: 50px;
         margin-right: 75px;
         margin-bottom: 25px;
     }
 
     .type {
-        color : grey;
         font-size: 15px;
-        font-family: 'Madimi One';
-        position: relative;
         margin-left: 10px ;
         top: -150px;
     }
     
     
     .panier {
-        position: relative;
+        display: inline-flex;
         width : 50px;
-        border: solid;
-        border-width: 4px;
-        border-color: #003b93c9;
-        border-radius: 10px;
-        background-color: #ff3f0fbd;       
-        margin-left : 210px;
+        margin-left: 250px;
         margin-bottom: -165px;
     }
 
