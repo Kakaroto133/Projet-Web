@@ -2,7 +2,7 @@
 
 h1,h2,h3,h4,h5,h6{
     font-family: 'Luckiest Guy';
-    color : red;
+    color : #003B93;
 }
 
 
@@ -63,6 +63,10 @@ figure {
         align-items: center;
     }
 
+    header .hamburger-menu {
+        position: relative;
+        justify-content: right;
+    }
     /*
     #boutique {
         padding: 40px;    
@@ -111,7 +115,7 @@ figure {
     
     .panier {
         display: inline-block;
-        width : 90px;
+        width : 50px;
         top : 165px;
         margin-left: 200px;
     }
