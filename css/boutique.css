@@ -57,8 +57,11 @@ figure {
 }
 
 
-@media (max-width: 500px){
+@media (max-width: 480px){
 
+    h1{
+        align-items: center;
+    }
 
     /*
     #boutique {
