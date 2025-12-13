@@ -46,18 +46,27 @@ figure {
     position: relative;
 }
 
+
 .panier {
-    position: relative;
+    position: absolute;
     width : 50px;
     border: solid;
     border-width: 4px;
     border-color: #1c61c897;
     border-radius: 10px;
-    background-color: #ff3f0fbd;       
+    background-color: #ff3f0fbd;
+
+    display: inline-block;
+    bottom: 10px;     
+    right: 10px;     
+    top: initial;
+    margin: 0;
+
 }
 
 
-@media (max-width: 500px){
+
+@media (max-width:480px){
 
     h1{
         align-items: center;
@@ -83,6 +92,61 @@ figure {
         position: relative;
         padding-bottom : 25px;
         font-size: 36px;
+        bottom: 40px;
+        margin-left:20px;
+    }
+
+
+    .prix {
+        margin-bottom : 40px;
+        left: 15px;  
+        font-size: 36px;
+    }
+    
+
+    figure {
+        margin-left: 50px;
+        margin-right: 75px;
+        margin-bottom: 25px;
+    }
+
+    .type {
+        font-size: 15px;
+        margin-left: 10px ;
+        top: -150px;
+    }
+    
+
+
+}
+
+
+@media (max-width: 768px) {
+
+    h1{
+        align-items: center;
+    }
+
+    header .hamburger-menu {
+        position: relative;
+        justify-content: right;
+    }
+    /*
+    #boutique {
+        padding: 40px;    
+    }*/
+
+    .produit {
+        width: 400px;
+        top: 10px;
+        left: 20px;
+        margin-left: 125px;
+    }
+    
+    h3{
+        margin: 25px;
+        position: relative;
+        padding-bottom : 25px;
         bottom: 40px;
         margin-left:20px;
     }
@@ -112,16 +176,14 @@ figure {
         top: -150px;
     }
     
-    
+/*    
     .panier {
         display: inline-block;
         width : 50px;
         top : 165px;
         margin-left: 200px;
     }
+*/
 
-    .mug1 .panier,.cle .panier, .veste .panier, .doudoune .panier, .figurine .panier{
-        top : 180px
-    }
 
 }
