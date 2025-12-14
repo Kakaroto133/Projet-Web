@@ -15,6 +15,16 @@ Création d’un site web autour de l’univers **L’Attaque des Titans** prés
 
 ---
 
+## 👥 Le groupe
+
+| Nom & Prénom | E-mail |
+|--------------|-------------|
+| **AL'HADHURI Fayadine** | fayadine.ALHADHURI@etu.univ-amu.fr |
+| **FABBI Lochlann** | lochlann.fabbi@etu.univ-amu.fr |
+| **SALAH Abdelkader** | abdelkader.salah@etu.univ-amu.fr |
+
+---
+
 ## 📦 Ressources & Sources
 
 ### 🎨 Logos & Visuels
