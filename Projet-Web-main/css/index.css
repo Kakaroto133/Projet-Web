@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+/*--- CONFIGURATION DES COULEURS ---*/
+:root {
+    --color-primary: #003B93;    /* Bleu (Clair) */
+    --color-text-main: #000000;
+    --color-bg: #ffffff;
+}
+
+/* Ton JS ajoute .dark-mode au body, donc on inverse ici */
+body.dark-mode {
+    --color-primary: #e63946;    /* Rouge (Sombre) */
+    --color-text-main: #ffffff;
+    --color-bg: #1a1a1a;
+}
+
+body {
+    background-color: var(--color-bg);
+    color: var(--color-text-main);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/*---INTRODUCTION---*/
+.introduction {
+    max-width: 1200px; 
+    margin: 0 auto;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.titre-principal {
+    color: var(--color-primary); /* Bleu -> Rouge */
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 65px;
+    transition: color 0.3s ease;
+}
+
+.sous-titre {
+    color: var(--color-text-main); 
+    font-size: 20px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+}
+
+.intro-image {
+    display: block;
+    margin: 20px auto;
+    width: 800px; 
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px; 
+    margin-top: 80px;
+}
+
+.video-accueil {
+    display: block;
+    margin: 0 auto;
+    max-width: 300px;
+    width: 90%;
+    border-radius: 20px;
+    /* Suppression de l'ombre demandée */
+    box-shadow: none; 
+    margin-bottom: 80px;
+}
+
+/*---PARTENAIRES---*/
+@keyframes defilement {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+}
+
+.partenaires {
+    text-align: center;
+    padding: 30px 0;
+    overflow: hidden; 
+}
+
+.banderole {
+    width: 600px; 
+    margin: 20px auto 0 auto; 
+    overflow: hidden;
+    padding: 10px 0; 
+    border: 1px solid #ddd; 
+    border-radius: 10px;
+    /* Suppression de l'ombre demandée */
+    box-shadow: none; 
+}
+
+.conteneur-logos {
+    display: flex; 
+    align-items: center;
+    gap: 30px; 
+    animation: defilement 20s linear infinite; 
+    width: fit-content;
+    min-width: 200%;
+}
+
+.conteneur-logos img {
+    width: 120px;
+    height: auto;
+    min-width: 60px;
+    margin: 0; 
+    flex-shrink: 0; 
+}
+
+/*---PUBLICITÉ---*/
+.pub {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.conteneur-pub-lignes {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 0 20px;
+}
+
+.pub-ligne {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px 40px; 
+    text-align: left;
+    /* Optionnel: ajouter une bordure qui change de couleur pour marquer les sections */
+    border-bottom: 1px solid var(--color-primary); 
+}
+
+.pub-point h2 {
+    color: var(--color-primary); /* Titres "Qualité Premium", etc : Bleu -> Rouge */
+}
+
+.pub-point {
+    max-width: 50%;
+    padding: 0 20px;
+}
+
+.pub-ligne img {
+    height: 200px; 
+    width: auto;
+    flex-shrink: 0;
+}
+
+/*---HISTOIRE---*/
+.histoire {
+    max-width: 1200px;
+    margin: 40px auto 80px auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    text-align: initial;
+}
+
+.histoire-gauche, .histoire-centre, .histoire-droite {
+    flex: 1;
+    text-align: left; 
+    border-top: 2px solid var(--color-primary); /* Ligne de séparation : Bleue -> Rouge */
+    padding-top: 20px; 
+    margin-top: 20px; 
+    line-height: 1.6;
+    color: var(--color-text-main); 
+}
+
+/*---MEDIA QUERIES---*/
+@media (max-width: 768px) {
+    .titre-principal { font-size: 45px; }
+    .sous-titre { font-size: 1.1rem; }
+    .intro-image { margin-top: 40px; }
+    .banderole { width: 90vw; max-width: 600px; }
+    .pub-ligne { flex-direction: column; padding: 20px; text-align: center; }
+    .pub-ligne img { order: -1; margin-bottom: 20px; height: 150px; }
+    .pub-point { max-width: 100%; padding: 0; }
+    .histoire { flex-direction: column; gap: 20px; max-width: 900px; margin: 20px auto; }
+}
+
+@media (max-width: 480px) {
+    .titre-principal { font-size: 30px; }
+    .intro-image { max-width: 95%; margin-top: 40px; }
+}
