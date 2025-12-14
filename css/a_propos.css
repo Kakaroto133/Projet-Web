@@ -1,0 +1,245 @@
+/* --- MISE EN PAGE GLOBALE --- */
+.container-propos {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.titre-page {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: #003B93;
+    font-family: 'Luckiest Guy';
+}
+
+.intro-texte {
+    font-size: 0.95rem;
+    color: #333;
+    margin-bottom: 60px;
+    max-width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+    font-family: 'Madimi One';
+}
+
+/* --- MISSION ET VALEURS --- */
+.mission-valeurs-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    text-align: left;
+    margin-bottom: 80px;
+}
+
+.notre-mission h2, .nos-valeurs h2 {
+    font-family: 'Luckiest Guy';
+    font-size: 1.8rem;
+    color: #003B93;
+    margin-bottom: 20px;
+}
+
+.notre-mission p, .nos-valeurs li {
+    font-family: 'Madimi One';
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.nos-valeurs ul {
+    list-style: none;
+}
+
+/* --- PARTENAIRES (Cliquables) --- */
+.partenaires-section h2 {
+    font-family: 'Luckiest Guy';
+    font-size: 1.2rem;
+    color: #003B93;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.partenaires-container {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 80px;
+}
+
+.partenaires-container a {
+    transition: transform 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+.partenaires-container a:hover {
+    transform: scale(1.1);
+}
+
+.partenaires-container img {
+    height: 45px;
+    width: auto;
+}
+
+/* --- SECTION CONTACT --- */
+.titre-contact {
+    font-family: 'Luckiest Guy';
+    font-size: 2rem;
+    color: #003B93;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 25px;
+    margin-bottom: 50px;
+}
+
+/* --- STYLE DES BOÎTES --- */
+.form-boite, .info-item {
+    background: #f0f4f9;
+    border: 3.5px solid #a5badb;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 4px 0px #a5badb;
+    text-align: left;
+}
+
+.input-group label {
+    font-family: 'Luckiest Guy';
+    color: #003B93;
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+}
+
+.input-group input, .input-group textarea {
+    background: #8fa9cc;
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    color: white;
+    font-family: 'Madimi One';
+    width: 100%;
+}
+
+.bouton-envoyer {
+    background: #003B93;
+    color: white;
+    border: none;
+    padding: 12px 35px;
+    border-radius: 8px;
+    font-family: 'Luckiest Guy';
+    cursor: pointer;
+    float: right;
+    transition: transform 0.2s;
+}
+
+.bouton-envoyer:hover {
+    transform: scale(1.05);
+}
+
+/* --- INFOS CONTACT --- */
+.contact-infos {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 15px 25px;
+    min-height: 90px;
+    margin-bottom: 10px;
+}
+
+.info-item img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain; /* Telephone affiché entièrement */
+    flex-shrink: 0;
+}
+
+.info-item h3 {
+    margin: 0;
+    font-family: 'Luckiest Guy';
+    font-size: 1.1rem;
+    color: #003B93;
+}
+
+.info-item p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #333;
+    font-family: 'Madimi One';
+}
+
+/* --- PANIER INDISPONIBLE --- */
+nav a[href="panier.html"] {
+    cursor: not-allowed;
+}
+
+/* =========================================
+   MODE SOMBRE (Remplacement Bleu -> Rouge)
+   ========================================= */
+
+body.dark-mode .titre-page,
+body.dark-mode .notre-mission h2,
+body.dark-mode .nos-valeurs h2,
+body.dark-mode .partenaires-section h2,
+body.dark-mode .titre-contact,
+body.dark-mode .input-group label,
+body.dark-mode .info-item h3 {
+    color: #fc4d4d; /* Rouge SnK */
+}
+
+body.dark-mode .intro-texte,
+body.dark-mode .notre-mission p,
+body.dark-mode .nos-valeurs li,
+body.dark-mode .info-item p {
+    color: #ffffff; /* Texte en blanc */
+}
+
+/* Rectangle Partenaires Gris */
+body.dark-mode .partenaires-container {
+    background: #333333;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    border: 1px solid #444;
+}
+
+/* Boîtes Contact et Formulaire */
+body.dark-mode .form-boite, 
+body.dark-mode .info-item {
+    background: #2a2a2a;
+    border-color: #fc4d4d;
+    box-shadow: 0 4px 0px #fc4d4d;
+}
+
+body.dark-mode .input-group input, 
+body.dark-mode .input-group textarea {
+    background: #444;
+    border: 1px solid #fc4d4d;
+}
+
+body.dark-mode .bouton-envoyer {
+    background: #fc4d4d;
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 768px) {
+    .mission-valeurs-grid, .contact-grid {
+        grid-template-columns: 1fr;
+    }
+    .bouton-envoyer {
+        float: none;
+        width: 100%;
+    }
+}

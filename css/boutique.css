@@ -1,0 +1,122 @@
+/* Importation des polices Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Madimi+One&display=swap');
+
+/* Définition des variables de thème */
+:root {
+    --color-primary: #003B93;    /* Bleu (Clair) */
+    --color-h1: #003B93;         /* Titre Bleu */
+    --color-bg-card: #ffffff;
+    --color-text-main: #000000;
+    --color-price-bg: #f0f0f0;
+}
+
+/* Mode Sombre */
+body.dark-mode {
+    --color-primary: #e63946;    /* Rouge (Sombre) */
+    --color-h1: #e63946;         /* Titre Rouge */
+    --color-bg-card: #1a1a1a;
+    --color-text-main: #ffffff;
+    --color-price-bg: #2d2d2d;
+}
+
+body {
+    font-family: 'Madimi One', sans-serif;
+    background-color: var(--color-bg-card);
+    color: var(--color-text-main);
+}
+
+#boutique {
+    text-align: center;
+    padding: 40px 20px;
+    color: var(--color-h1);
+    font-family: 'Luckiest Guy', cursive;
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    transition: color 0.3s ease;
+}
+
+section {
+    max-width: 1000px;
+    margin: 0 auto 80px auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 30px;
+    padding: 0 20px;
+}
+
+/* Fiches produits (RETOUR À TON STYLE PLAT) */
+section > div {
+    border: 3px solid var(--color-primary);
+    border-radius: 10px;
+    padding: 20px;
+    background-color: var(--color-bg-card);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: none; 
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+section img:first-child {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    object-fit: contain;
+}
+
+section h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: var(--color-primary);
+    text-transform: uppercase;
+    text-align: left;
+    font-family: 'Luckiest Guy', cursive;
+    letter-spacing: 1px;
+}
+
+.categorie {
+    display: block;
+    font-size: 0.9rem;
+    color: #666;
+    text-align: right;
+    margin-top: 5px;
+}
+
+.achat-ligne {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.prix {
+    border: 2px solid var(--color-primary);
+    padding: 5px 15px;
+    color: var(--color-primary);
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: var(--color-price-bg);
+    font-family: 'Madimi One', sans-serif;
+}
+
+/* Bouton Panier (On ajoute juste le curseur interdit ici) */
+.icone-panier {
+    width: 40px;
+    height: 40px;
+    cursor: not-allowed; /* Indique que c'est bloqué */
+    background-color: var(--color-primary);
+    border: 2px solid #000;
+    border-radius: 5px;
+    padding: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    section {
+        grid-template-columns: 1fr;
+    }
+    #boutique {
+        font-size: 2.5rem;
+    }
+}
