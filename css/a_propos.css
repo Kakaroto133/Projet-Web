@@ -1,66 +1,91 @@
-/* --- MISE EN PAGE GLOBALE --- */
+/* variables de theme */
+:root {
+    --color-primary: #003B93;
+    --color-h1: #003B93;
+    --color-bg-card: #ffffff;
+    --color-text-main: #333333;
+    --color-box-bg: #f0f4f9;
+    --color-border: #a5badb;
+    --color-star-off: #ccc;
+    --color-star-on: #ffc107;
+}
+
+body.dark-mode {
+    --color-primary: #fc4d4d;
+    --color-h1: #fc4d4d;
+    --color-bg-card: #4b4b4b;
+    --color-text-main: #ffffff;
+    --color-box-bg: #2a2a2a;
+    --color-border: #fc4d4d;
+    --color-star-off: #555;
+    --color-star-on: #ffc107; 
+}
+
+/* mise en page */
 .container-propos {
     max-width: 1100px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 40px 20px;
     text-align: center;
 }
 
 .titre-page {
     font-size: 3rem;
     margin-bottom: 10px;
-    color: #003B93;
+    color: var(--color-h1);
     font-family: 'Luckiest Guy';
+    transition: color 0.5s ease;
 }
 
 .intro-texte {
     font-size: 0.95rem;
-    color: #333;
     margin-bottom: 60px;
     max-width: 850px;
     margin-left: auto;
     margin-right: auto;
     line-height: 1.6;
-    font-family: 'Madimi One';
 }
 
-/* --- MISSION ET VALEURS --- */
+/* mission et valeurs */
 .mission-valeurs-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 60px;
-    text-align: left;
+    text-align: center;
     margin-bottom: 80px;
+}
+
+.notre-mission, .nos-valeurs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .notre-mission h2, .nos-valeurs h2 {
     font-family: 'Luckiest Guy';
     font-size: 1.8rem;
-    color: #003B93;
+    color: var(--color-h1);
     margin-bottom: 20px;
 }
 
 .notre-mission p, .nos-valeurs li {
-    font-family: 'Madimi One';
-    color: #333;
     margin-bottom: 15px;
+    max-width: 450px;
 }
 
-.nos-valeurs ul {
-    list-style: none;
-}
+.nos-valeurs ul { list-style: none; padding: 0; }
 
-/* --- PARTENAIRES (Cliquables) --- */
+/* partenaires */
 .partenaires-section h2 {
     font-family: 'Luckiest Guy';
     font-size: 1.2rem;
-    color: #003B93;
+    color: var(--color-h1);
     margin-bottom: 25px;
-    text-align: center;
 }
 
 .partenaires-container {
-    background: white;
+    background: var(--color-bg-card);
+    border: 1px solid var(--color-border);
     padding: 30px;
     border-radius: 20px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
@@ -69,16 +94,16 @@
     align-items: center;
     flex-wrap: wrap;
     margin-bottom: 80px;
+    transition: background-color 0.5s ease, border-color 0.5s ease;
 }
 
 .partenaires-container a {
-    transition: transform 0.3s ease;
-    display: flex;
-    align-items: center;
+    display: inline-block;
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .partenaires-container a:hover {
-    transform: scale(1.1);
+    transform: scale(1.15);
 }
 
 .partenaires-container img {
@@ -86,11 +111,11 @@
     width: auto;
 }
 
-/* --- SECTION CONTACT --- */
+/* contact */
 .titre-contact {
     font-family: 'Luckiest Guy';
     font-size: 2rem;
-    color: #003B93;
+    color: var(--color-h1);
     margin-bottom: 30px;
     text-align: left;
 }
@@ -98,23 +123,41 @@
 .contact-grid {
     display: grid;
     grid-template-columns: 1.2fr 1fr;
-    gap: 25px;
+    gap: 30px;
     margin-bottom: 50px;
 }
 
-/* --- STYLE DES BOÎTES --- */
+.contact-infos {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* boites et formulaires */
 .form-boite, .info-item {
-    background: #f0f4f9;
-    border: 3.5px solid #a5badb;
+    background: var(--color-box-bg);
+    border: 3.5px solid var(--color-border);
     border-radius: 12px;
     padding: 25px;
-    box-shadow: 0 4px 0px #a5badb;
+    box-shadow: 0 4px 0px var(--color-border);
     text-align: left;
+    transition: all 0.5s ease;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.input-group {
+    margin-bottom: 15px;
 }
 
 .input-group label {
+    display: block;
     font-family: 'Luckiest Guy';
-    color: #003B93;
+    color: var(--color-primary);
     margin-bottom: 8px;
     font-size: 1.1rem;
 }
@@ -125,12 +168,49 @@
     border-radius: 8px;
     padding: 12px;
     color: white;
-    font-family: 'Madimi One';
     width: 100%;
+    box-sizing: border-box;
+    font-family: 'Madimi One';
 }
 
+body.dark-mode .input-group input, body.dark-mode .input-group textarea {
+    background: #444;
+    border: 1px solid var(--color-primary);
+}
+
+/* notation */
+.notation-etoiles {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.notation-etoiles input {
+    display: none;
+}
+
+.notation-etoiles label {
+    font-size: 2rem;
+    color: var(--color-star-off);
+    cursor: pointer;
+    transition: color 0.2s ease, transform 0.2s ease;
+    text-shadow: none !important;
+    margin: 0;
+}
+
+.notation-etoiles label:hover,
+.notation-etoiles label:hover ~ label,
+.notation-etoiles input:checked ~ label {
+    color: var(--color-star-on);
+    transform: scale(1.1);
+    text-shadow: 0 0 5px rgba(255, 193, 7, 0.5);
+}
+
+/* bouton envoyer */
 .bouton-envoyer {
-    background: #003B93;
+    background: var(--color-primary);
     color: white;
     border: none;
     padding: 12px 35px;
@@ -139,32 +219,14 @@
     cursor: pointer;
     float: right;
     transition: transform 0.2s;
+    margin-top: 10px;
 }
 
-.bouton-envoyer:hover {
-    transform: scale(1.05);
-}
-
-/* --- INFOS CONTACT --- */
-.contact-infos {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.info-item {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    padding: 15px 25px;
-    min-height: 90px;
-    margin-bottom: 10px;
-}
+.bouton-envoyer:hover { transform: scale(1.05); }
 
 .info-item img {
     width: 40px;
     height: 40px;
-    object-fit: contain; /* Telephone affiché entièrement */
     flex-shrink: 0;
 }
 
@@ -172,74 +234,14 @@
     margin: 0;
     font-family: 'Luckiest Guy';
     font-size: 1.1rem;
-    color: #003B93;
+    color: var(--color-primary);
 }
 
-.info-item p {
-    margin: 0;
-    font-size: 0.9rem;
-    color: #333;
-    font-family: 'Madimi One';
-}
-
-/* --- PANIER INDISPONIBLE --- */
-nav a[href="panier.html"] {
-    cursor: not-allowed;
-}
-
-/* =========================================
-   MODE SOMBRE (Remplacement Bleu -> Rouge)
-   ========================================= */
-
-body.dark-mode .titre-page,
-body.dark-mode .notre-mission h2,
-body.dark-mode .nos-valeurs h2,
-body.dark-mode .partenaires-section h2,
-body.dark-mode .titre-contact,
-body.dark-mode .input-group label,
-body.dark-mode .info-item h3 {
-    color: #fc4d4d; /* Rouge SnK */
-}
-
-body.dark-mode .intro-texte,
-body.dark-mode .notre-mission p,
-body.dark-mode .nos-valeurs li,
-body.dark-mode .info-item p {
-    color: #ffffff; /* Texte en blanc */
-}
-
-/* Rectangle Partenaires Gris */
-body.dark-mode .partenaires-container {
-    background: #333333;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-    border: 1px solid #444;
-}
-
-/* Boîtes Contact et Formulaire */
-body.dark-mode .form-boite, 
-body.dark-mode .info-item {
-    background: #2a2a2a;
-    border-color: #fc4d4d;
-    box-shadow: 0 4px 0px #fc4d4d;
-}
-
-body.dark-mode .input-group input, 
-body.dark-mode .input-group textarea {
-    background: #444;
-    border: 1px solid #fc4d4d;
-}
-
-body.dark-mode .bouton-envoyer {
-    background: #fc4d4d;
-}
-
-/* --- RESPONSIVE --- */
+/* responsive */
 @media (max-width: 768px) {
-    .mission-valeurs-grid, .contact-grid {
-        grid-template-columns: 1fr;
-    }
-    .bouton-envoyer {
-        float: none;
-        width: 100%;
-    }
+    .mission-valeurs-grid, .contact-grid { grid-template-columns: 1fr; }
+    .bouton-envoyer { float: none; width: 100%; }
+    .titre-contact { text-align: center; }
+    .contact-grid { gap: 40px; }
+    .notation-etoiles { justify-content: center; }
 }
