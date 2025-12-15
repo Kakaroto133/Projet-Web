@@ -1,33 +1,53 @@
 /* polices */
 @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Madimi+One&display=swap');
 
-/* variables de theme */
+/* variables de theme pour differencier le theme sombre du theme clair*/
 :root {
-    --color-primary: #003B93;
+    --color-primaire: #003B93;
     --color-h1: #003B93;
-    --color-bg-card: #ffffff;
-    --color-text-main: #000000;
-    --color-price-bg: #f0f0f0;
+    --color-bg: #ffffff;
+    --color-text: #000000;
+    --color-bg-prix: #f0f0f0;
+    --color-panier :#579affbe;
+    --color-bord : #000;
 }
 
 body.dark-mode {
-    --color-primary: #e63946;
+    --color-primaire: #e63946;
     --color-h1: #e63946;
-    --color-bg-card: #1a1a1a;
-    --color-text-main: #ffffff;
-    --color-price-bg: #2d2d2d;
+    --color-bg: #1a1a1a;
+    --color-text: #ffffff;
+    --color-bg-prix: #968e8e;
+    --color-panier: #e63946;
+    --color-bord: #968e8e;
 }
+
+
+/* Body  mode clair */
+body .info-produit-obscur,body img.obscur{
+    display: none;
+}
+
+
+/* Body  mode obscur */
+body.dark-mode .clair, body.dark-mode .info-produit {
+    display : none;
+}
+
+body.dark-mode .obscur, body.dark-mode .info-produit-obscur {
+    display: block;
+}
+
 
 /* styles globaux */
 body {
     font-family: 'Madimi One', sans-serif;
-    background-color: var(--color-bg-card);
-    color: var(--color-text-main);
+    background-color: var(--color-bg);
+    color: var(--color-text);
 }
 
 .boutique, section h3 {
     font-family: 'Luckiest Guy', cursive;
-    text-transform: uppercase;
 }
 
 .boutique {
@@ -35,42 +55,46 @@ body {
     padding: 40px 20px;
     color: var(--color-h1);
     font-size: 3.5rem;
-    transition: color 0.3s ease;
 }
 
 /* grille produits */
 section {
     max-width: 1000px;
-    margin: 0 auto 80px;
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 80px;
+    margin-left: auto;
     display: grid;
-    grid-template-columns: repeat(2, 1fr); 
+    grid-template-columns: 1fr 1fr; 
     gap: 30px;
-    padding: 0 20px;
+    padding-right: 20px;
+    padding-left: 20px;
 }
 
 /* fiches produits */
-section > div {
-    border: 3px solid var(--color-primary);
+section figure {
+    border: 3px solid var(--color-primaire);
     border-radius: 10px;
     padding: 20px;
-    background-color: var(--color-bg-card);
+    background-color: var(--color-bg);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    transition: all 0.3s ease;
 }
 
-section img:first-child {
+section img:first-child, section img:nth-child(2){
     max-width: 100%;
     height: auto;
     margin-bottom: 15px;
     object-fit: contain;
 }
 
+
+
 section h3 {
     margin: 0;
     font-size: 1.2rem;
-    color: var(--color-primary);
+    color: var(--color-primaire);
     letter-spacing: 1px;
 }
 
@@ -82,7 +106,7 @@ section h3 {
     margin-top: 5px;
 }
 
-.achat-ligne {
+.achat {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -90,12 +114,14 @@ section h3 {
 }
 
 .prix {
-    border: 2px solid var(--color-primary);
-    padding: 5px 15px;
-    color: var(--color-primary);
-    font-weight: bold;
+    border: 2px solid var(--color-primaire);
+    padding-top: 5px;
+    padding-right: 15px;
+    padding-bottom: 5px;
+    padding-left: 15px;    
+    color: var(--color-primaire);
     border-radius: 5px;
-    background-color: var(--color-price-bg);
+    background-color: var(--color-bg-prix);
 }
 
 /* bouton panier */
@@ -103,11 +129,12 @@ section h3 {
     width: 40px;
     height: 40px;
     cursor: not-allowed;
-    background-color: var(--color-primary);
-    border: 2px solid #000;
+    background-color: var(--color-panier);
+    border-width: 2px;
+    border-style: solid;
+    border-color: var(--color-bord);    
     border-radius: 5px;
     padding: 5px;
-    transition: background-color 0.3s ease;
 }
 
 /* responsive */
