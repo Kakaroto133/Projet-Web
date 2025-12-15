@@ -18,7 +18,6 @@ body.dark-mode {
 body {
     background-color: var(--color-bg);
     color: var(--color-text-main);
-    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /* introduction */
@@ -33,7 +32,6 @@ body {
     color: var(--color-primary);
     font-family: 'Luckiest Guy', cursive;
     font-size: 65px;
-    transition: color 0.3s ease;
 }
 
 .sous-titre {

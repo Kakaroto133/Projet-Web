@@ -10,6 +10,23 @@
     --text-main: #333333;
 }
 
+body.page-panier-layout {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+body.page-panier-layout footer {
+    margin-top: auto;
+    width: 100%;
+}
+
+body.page-panier-layout header, 
+body.page-panier-layout main {
+    width: 100%;
+}
+
+
 body.dark-mode {
     --primary-color: #e63946;
     --primary-color-dark: #b52b35;
@@ -22,7 +39,6 @@ body.dark-mode {
 body {
     background-color: var(--bg-container);
     color: var(--text-main);
-    transition: background-color 0.3s ease;
 }
 
 /* mise en page panier */
@@ -32,7 +48,6 @@ body {
     color: var(--primary-color);
     font-family: 'Luckiest Guy', cursive;
     margin: 40px 0;
-    transition: color 0.3s ease;
 }
 
 .panier-container {
@@ -151,7 +166,6 @@ body {
     text-align: center;
     text-decoration: none;
     cursor: pointer;
-    transition: background 0.3s ease;
     font-family: 'Madimi One', cursive;
 }
 
