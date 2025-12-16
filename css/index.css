@@ -87,6 +87,9 @@ body {
     animation: defilement 20s linear infinite;
     width: fit-content;
     min-width: 200%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .conteneur-logos img {
