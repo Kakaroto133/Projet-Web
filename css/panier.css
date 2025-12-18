@@ -3,8 +3,8 @@
 
 /* variables de theme */
 :root {
-    --primary-color: #003B93;
-    --primary-color-dark: #002a6b;
+    --color-primaire: #003B93;
+    --color-primaire-dark: #002a6b;
     --bg-container: #ffffff;
     --bg-secondary: #f5f5f5;
     --text-main: #333333;
@@ -28,8 +28,8 @@ body.page-panier-layout main {
 
 
 body.dark-mode {
-    --primary-color: #e63946;
-    --primary-color-dark: #b52b35;
+    --color-primaire: #e63946;
+    --color-primaire-dark: #b52b35;
     --bg-container: #1a1a1a;
     --bg-secondary: #2a2a2a;
     --text-main: #ffffff;
@@ -45,7 +45,7 @@ body {
 .panier-page {
     text-align: center;
     font-size: 64px;
-    color: var(--primary-color);
+    color: var(--color-primaire);
     font-family: 'Luckiest Guy', cursive;
     margin: 40px 0;
 }
@@ -68,7 +68,7 @@ body {
 .message-panier-vide {
     font-size: 1.5rem;
     font-weight: bold;
-    color: var(--primary-color);
+    color: var(--color-primaire);
     margin-bottom: 10px;
 }
 
@@ -79,7 +79,7 @@ body {
 }
 
 .sous-message a {
-    color: var(--primary-color);
+    color: var(--color-primaire);
     text-decoration: none;
     font-weight: bold;
 }
@@ -88,7 +88,7 @@ body {
 .panier-tableau {
     background: var(--bg-container);
     border-radius: 8px;
-    border: 2px solid var(--primary-color);
+    border: 2px solid var(--color-primaire);
     box-shadow: none;
     overflow: hidden;
 }
@@ -99,7 +99,7 @@ body {
 }
 
 .tableau-panier thead {
-    background: var(--primary-color);
+    background: var(--color-primaire);
     color: white;
 }
 
@@ -126,7 +126,7 @@ body {
 .resume-panier {
     padding: 30px;
     background: var(--bg-secondary);
-    border-top: 2px solid var(--primary-color);
+    border-top: 2px solid var(--color-primaire);
 }
 
 .ligne-prix {
@@ -139,15 +139,15 @@ body {
 .ligne-prix.total {
     font-size: 1.3rem;
     font-weight: bold;
-    border-top: 2px solid var(--primary-color);
+    border-top: 2px solid var(--color-primaire);
     padding-top: 15px;
     margin-top: 15px;
-    color: var(--primary-color);
+    color: var(--color-primaire);
 }
 
 .prix-panier {
     font-weight: bold;
-    color: var(--primary-color);
+    color: var(--color-primaire);
 }
 
 /* boutons */
@@ -157,7 +157,7 @@ body {
     box-sizing: border-box;
     padding: 15px;
     margin-top: 20px;
-    background: var(--primary-color);
+    background: var(--color-primaire);
     color: white;
     border: none;
     border-radius: 5px;
@@ -171,7 +171,7 @@ body {
 
 .btn-checkout:hover:not(:disabled), 
 .btn-continuer-shopping:hover {
-    background: var(--primary-color-dark);
+    background: var(--color-primaire-dark);
 }
 
 .btn-checkout:disabled {
