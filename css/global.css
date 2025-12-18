@@ -219,3 +219,28 @@ body.dark-mode .footer-adresse { color: #bbb; }
         margin: 0 10px;    /* Meilleure répartition des icônes */
     }
 }
+
+@media (min-width: 768px){
+    .haut-page {
+        display: none !important;
+    }
+}
+
+
+@media (max-width: 768px){
+    .haut-page {
+        position: fixed;   /* reste toujours au même endroit */
+        bottom: 20px;      /* distance par rapport au bas de l'écran */
+        right: 20px;       /* distance par rapport à la droite */
+        width: 50px;       /* taille de ton image */
+        height: 50px;      /* facultatif */
+        cursor: pointer;   /* curseur quand on survole */
+        z-index: 1000;     /* au-dessus des autres éléments */
+        opacity: 0.8;      /* légèrement transparent */
+        transition: opacity 0.3s;
+    }
+
+    .haut-page:hover {
+        opacity: 1;        /* effet au survol */
+    }
+}
