@@ -39,6 +39,7 @@ Création d’un site web autour de l’univers **L’Attaque des Titans** prés
 | Qualité Premium | [Lien](https://www.flaticon.com/fr/icone-gratuite/qualite_310831) |
 | Livraison rapide | [Lien](https://www.flaticon.com/fr/icone-gratuite/livraison-rapide_98999) |
 | Retours faciles | [Lien](https://fr.freepik.com/vecteurs-premium/icone-fleche-retour-icone-fleche-retour-image-stock-illustration-vectorielle_49474208.htm) |
+| Flèche vers le haut | [Lien](https://fr.123rf.com/photo_111616484_ic%C3%B4ne-de-vecteur-de-fl%C3%A8che-vers-le-haut-isol%C3%A9-sur-fond-transparent-concept-de-logo-de-transparence-f.html) |
 | Logo SNK STORE | Généré via ChatGPT |
 | Instagram | [Lien](https://www.pngkit.com/view/u2q8w7o0w7u2o0w7_ig-png-logo-svg-transparent-instagram-logo-png/) |
 | LinkedIn | [Lien](https://www.template.net/editable/85938/grey-linkedin-vector) |
