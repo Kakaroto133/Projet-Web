@@ -49,4 +49,16 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
+    //4
+    const topBtn = document.querySelector(".haut-page");
+
+    topBtn.addEventListener("click", function() {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+
+
+
 });
