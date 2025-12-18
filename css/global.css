@@ -62,7 +62,6 @@ header {
     color: #000000;
     font-size: 1.1rem;
     padding: 5px 10px;
-    transition: all 0.2s ease;
     font-family: 'Madimi One';
     display: inline-block;
 }
@@ -84,7 +83,6 @@ header {
     display: inline-block;
     text-decoration: none;
     margin-top: 20px;
-    transition: all 0.2s ease;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
@@ -102,7 +100,6 @@ header {
     display: inline-block;
     text-decoration: none;
     margin-top: 20px;
-    transition: all 0.2s ease;
 }
 
 .bouton-secondaire:hover {
@@ -135,7 +132,6 @@ footer {
     text-decoration: none;
     margin: 0 15px;
     padding: 0;
-    transition: all 0.2s ease;
     font-family: 'Madimi One';
     display: inline-block;
 }
@@ -143,7 +139,7 @@ footer {
 .navigation-footer a:hover { color: #003B93; transform: scale(1.05); }
 
 .social-icons { display: flex; align-items: center; flex-shrink: 0; }
-.social-icons img { height: 25px; width: auto; margin-left: 15px; transition: transform 0.2s ease; }
+.social-icons img { height: 25px; width: auto; margin-left: 15px; }
 .social-icons img:hover { transform: scale(1.2); }
 
 .footer-adresse {
@@ -153,7 +149,6 @@ footer {
     color: #555;
     font-family: 'Madimi One', sans-serif;
     text-align: center;
-    transition: color 0.5s ease;
 }
 
 /* mode sombre */

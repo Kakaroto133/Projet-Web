@@ -36,7 +36,6 @@ body.dark-mode {
     margin-bottom: 10px;
     color: var(--color-h1);
     font-family: 'Luckiest Guy';
-    transition: color 0.5s ease;
 }
 
 .intro-texte {
@@ -96,12 +95,10 @@ body.dark-mode {
     align-items: center;
     flex-wrap: wrap;
     margin-bottom: 80px;
-    transition: background-color 0.5s ease, border-color 0.5s ease;
 }
 
 .partenaires-container a {
     display: inline-block;
-    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .partenaires-container a:hover {
@@ -143,7 +140,6 @@ body.dark-mode {
     padding: 25px;
     box-shadow: 0 4px 0px var(--color-border);
     text-align: left;
-    transition: all 0.5s ease;
 }
 
 .info-item {
@@ -197,7 +193,6 @@ body.dark-mode .input-group input, body.dark-mode .input-group textarea {
     font-size: 2rem;
     color: var(--color-star-off);
     cursor: pointer;
-    transition: color 0.2s ease, transform 0.2s ease;
     text-shadow: none !important;
     margin: 0;
 }
@@ -220,7 +215,6 @@ body.dark-mode .input-group input, body.dark-mode .input-group textarea {
     font-family: 'Luckiest Guy';
     cursor: pointer;
     float: right;
-    transition: transform 0.2s;
     margin-top: 10px;
 }
 
