@@ -1,3 +1,4 @@
+// Fait par Lochlann (1,2) et Abdelkader (3)
 document.addEventListener('DOMContentLoaded', () => {
 
     // ------------------------------------------
@@ -60,5 +61,6 @@ document.addEventListener('DOMContentLoaded', () => {
             alert("⚔️ STOCK ÉPUISÉ ! ⚔️");
         });
     });
+
 
 });
