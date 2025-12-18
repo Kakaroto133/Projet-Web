@@ -1,4 +1,4 @@
-# 🌐 Projet-Web – *SNK STORE*
+# 🌐 Projet Web – *SNK STORE*
 
 ## 🎯 Description du projet  
 Création d’un site web autour de l’univers **L’Attaque des Titans** présentant un e-commerce fictif mettant en vente divers produits inspirés de l’anime.
