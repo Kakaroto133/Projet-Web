@@ -11,7 +11,7 @@ Création d’un site web autour de l’univers **L’Attaque des Titans** prés
 |------|------|
 | 📐 Maquette Figma | [Lien](https://www.figma.com/site/1hmi7xO5RueiX2cvtccGBV/Sans-titre?node-id=0-1&t=7MybZY07QmXh4CKp-1) |
 | 🌐 Hébergement Web | [Lien](https://snkstore.org/) |
-| 🔨 Gestion de Projet(nécessite les droits d'accès) | [Lien](https://github.com/Kakaroto133/Projet-Web/issues?q=is%3Aissue%20state%3Aclosed) |
+| 🔨 Gestion de Projet | [Lien](https://github.com/Kakaroto133/Projet-Web/issues?q=is%3Aissue%20state%3Aclosed) |
 | 🤖 Conversation Gemini | [Lien](https://gemini.google.com/share/63f1ff982d99) |
 
 ---
