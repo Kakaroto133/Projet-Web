@@ -218,29 +218,16 @@ body.dark-mode .footer-adresse { color: #bbb; }
     .social-icons img {
         margin: 0 10px;    /* Meilleure répartition des icônes */
     }
+
 }
 
-@media (min-width: 768px){
-    .haut-page {
-        display: none !important;
-    }
-}
-
-
-@media (max-width: 768px){
-    .haut-page {
-        position: fixed;   /* reste toujours au même endroit */
-        bottom: 20px;      /* distance par rapport au bas de l'écran */
-        right: 20px;       /* distance par rapport à la droite */
-        width: 50px;       /* taille de ton image */
-        height: 50px;      /* facultatif */
-        cursor: pointer;   /* curseur quand on survole */
-        z-index: 1000;     /* au-dessus des autres éléments */
-        opacity: 0.8;      /* légèrement transparent */
-        transition: opacity 0.3s;
-    }
-
-    .haut-page:hover {
-        opacity: 1;        /* effet au survol */
-    }
+.haut-page {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border: #003B93;
+    border-radius: 10px;
 }
